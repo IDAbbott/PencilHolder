@@ -99,7 +99,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 11
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -107,8 +107,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2949438202247191,
-                    "y": 0.4411177644710579,
+                    "x": 0.28651685393258425,
+                    "y": 0.4351297405189621,
                     "uniqueID": 1747782895326,
                     "ioValues": [
                         {
@@ -125,7 +125,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 20
+                            "ioValue": 19
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -139,7 +139,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 8
+                            "ioValue": 15
                         }
                     ],
                     "description": "Creates a new circle."
@@ -191,8 +191,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.5234082397003745,
-                    "y": 0.4630738522954092,
+                    "x": 0.5346441947565543,
+                    "y": 0.4211576846307385,
                     "uniqueID": 1747783026406,
                     "ioValues": [
                         {
@@ -205,6 +205,118 @@
                         }
                     ],
                     "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.1750936329588015,
+                    "y": 0.3013972055888224,
+                    "uniqueID": 1747783214869,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 8
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.2687265917602996,
+                    "y": 0.2934131736526946,
+                    "uniqueID": 1747783238421,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1747783214869
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 20
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.3838951310861423,
+                    "y": 0.27345309381237526,
+                    "uniqueID": 1747783258140,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1747783238421
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 20
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.6404494382022472,
+                    "y": 0.31137724550898205,
+                    "uniqueID": 1747783294440,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1747782831291
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1747783258140
+                        },
+                        {
+                            "name": "Shape 3",
+                            "ioValue": 1747783026406
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.1704119850187266,
+                    "y": 0.7145708582834331,
+                    "uniqueID": 1747783332761,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.27808988764044945,
+                    "y": 0.7465069860279441,
+                    "uniqueID": 1747783343872,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
                 }
             ],
             "allConnectors": [
@@ -214,6 +326,13 @@
                     "ap2Primary": true,
                     "ap1ID": 1747782809228,
                     "ap2ID": 1747782831291
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1747782831291,
+                    "ap2ID": 1747783294440
                 },
                 {
                     "ap1Name": "geometry",
@@ -256,6 +375,34 @@
                     "ap2Primary": false,
                     "ap1ID": 1747782985158,
                     "ap2ID": 1747783026406
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 1747783026406,
+                    "ap2ID": 1747783294440
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747783214869,
+                    "ap2ID": 1747783238421
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747783238421,
+                    "ap2ID": 1747783258140
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1747783258140,
+                    "ap2ID": 1747783294440
                 }
             ],
             "fileTypeVersion": 1,
