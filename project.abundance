@@ -435,7 +435,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 5.5
+                            "ioValue": 5
                         }
                     ],
                     "description": "Creates a new circle."
@@ -467,7 +467,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1747783679076
+                            "ioValue": 1747859028164
                         },
                         {
                             "name": "Resolution (dpi)",
@@ -642,7 +642,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10
+                            "ioValue": 3
                         }
                     ],
                     "description": "Creates a new circle."
@@ -656,7 +656,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1747858941013
                         },
                         {
                             "name": "height",
@@ -668,12 +668,35 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.29681647940074907,
-                    "y": 0.844311377245509,
+                    "x": 0.3155430711610487,
+                    "y": 0.8662674650698602,
                     "uniqueID": 1747858968269,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1747858956602
+                        }
+                    ],
                     "description": "Changes the color of the shape.",
-                    "selectedColorIndex": 0
+                    "selectedColorIndex": 22
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.4868913857677903,
+                    "y": 0.8802395209580839,
+                    "uniqueID": 1747859028164,
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": 1747783679076
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": 1747858968269
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
                 }
             ],
             "allConnectors": [
@@ -833,10 +856,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "geometry",
+                    "ap2Name": "geometry1",
                     "ap2Primary": false,
                     "ap1ID": 1747783679076,
-                    "ap2ID": 1747783724528
+                    "ap2ID": 1747859028164
                 },
                 {
                     "ap1Name": "geometry",
@@ -872,6 +895,34 @@
                     "ap2Primary": false,
                     "ap1ID": 1747858218512,
                     "ap2ID": 1747783294440
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747858941013,
+                    "ap2ID": 1747858956602
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1747858956602,
+                    "ap2ID": 1747858968269
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 1747858968269,
+                    "ap2ID": 1747859028164
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1747859028164,
+                    "ap2ID": 1747783724528
                 }
             ],
             "fileTypeVersion": 1,
