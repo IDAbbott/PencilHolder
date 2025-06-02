@@ -309,7 +309,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 3.2
+                            "ioValue": 2.5
                         }
                     ],
                     "description": "Creates a new circle."
@@ -327,7 +327,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 60
+                            "ioValue": 65
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -367,7 +367,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 10
+                            "ioValue": 5
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -385,7 +385,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 30
+                            "ioValue": 35
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -393,8 +393,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.47003745318352064,
-                    "y": 0.750499001996008,
+                    "x": 0.5310043668122271,
+                    "y": 0.6811279826464208,
                     "uniqueID": 1747783533914,
                     "ioValues": [
                         {
