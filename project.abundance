@@ -277,8 +277,8 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 20,
-                            "currentEquation": null
+                            "ioValue": 10,
+                            "currentEquation": "10"
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -358,8 +358,8 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 65,
-                            "currentEquation": null
+                            "ioValue": 55,
+                            "currentEquation": "55"
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -432,8 +432,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.7191011235955056,
-                    "y": 0.4850299401197605,
+                    "x": 0.7234416154521509,
+                    "y": 0.4690082644628099,
                     "uniqueID": 1747783568300,
                     "ioValues": [
                         {
@@ -636,8 +636,8 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": -20,
-                            "currentEquation": null
+                            "ioValue": -15,
+                            "currentEquation": "-15"
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -645,8 +645,8 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.25374531835205993,
-                    "y": 0.19361277445109779,
+                    "x": 0.257243195785777,
+                    "y": 0.18388429752066116,
                     "uniqueID": 1747858218512,
                     "ioValues": [
                         {
