@@ -51,19 +51,19 @@
                 {
                     "atomType": "RegularPolygon",
                     "name": "RegularPolygon",
-                    "x": 0.30283018867924527,
-                    "y": 0.07722772277227723,
+                    "x": 0.30754716981132074,
+                    "y": 0.10297029702970296,
                     "uniqueID": 1747782809228,
                     "ioValues": [
                         {
                             "name": "number of sides",
                             "ioValue": 6,
-                            "currentEquation": "6"
+                            "currentEquation": null
                         },
                         {
                             "name": "diameter",
                             "ioValue": 19,
-                            "currentEquation": "19"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -91,8 +91,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.17264150943396225,
-                    "y": 0.45544554455445546,
+                    "x": 0.1349056603773585,
+                    "y": 0.4633663366336634,
                     "uniqueID": 1747782837962,
                     "ioValues": [
                         {
@@ -163,7 +163,7 @@
                         {
                             "name": "diameter",
                             "ioValue": 15.6,
-                            "currentEquation": "15.6"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new circle."
@@ -241,8 +241,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.17790262172284646,
-                    "y": 0.3293413173652695,
+                    "x": 0.1957547169811321,
+                    "y": 0.40396039603960393,
                     "uniqueID": 1747783214869,
                     "ioValues": [
                         {
@@ -339,7 +339,7 @@
                         {
                             "name": "diameter",
                             "ioValue": 2.8,
-                            "currentEquation": "2.8"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new circle."
@@ -585,14 +585,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.05443371378402107,
-                    "y": 0.13016528925619833,
+                    "x": 0.11462264150943396,
+                    "y": 0.2316831683168317,
                     "uniqueID": 1747858145860,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 21,
-                            "currentEquation": "21"
+                            "ioValue": 20.1,
+                            "currentEquation": "20.1"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -600,8 +600,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.03651685393258427,
-                    "y": 0.2754491017964072,
+                    "x": 0.04764150943396226,
+                    "y": 0.44356435643564357,
                     "uniqueID": 1747858149469,
                     "ioValues": [
                         {
@@ -615,8 +615,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.13576779026217228,
-                    "y": 0.25948103792415167,
+                    "x": 0.10754716981132076,
+                    "y": 0.3603960396039604,
                     "uniqueID": 1747858153723,
                     "ioValues": [
                         {
@@ -645,15 +645,10 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.257243195785777,
-                    "y": 0.18388429752066116,
+                    "x": 0.22971698113207548,
+                    "y": 0.2594059405940594,
                     "uniqueID": 1747858218512,
                     "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": 1747858145860,
-                            "currentEquation": null
-                        },
                         {
                             "name": "Shape 2",
                             "ioValue": 1747858153723,
@@ -663,10 +658,6 @@
                             "name": "Shape 3",
                             "ioValue": "",
                             "currentEquation": null
-                        },
-                        {
-                            "name": "Shape 1",
-                            "ioValue": 1747858145860
                         },
                         {
                             "name": "Shape 2",
@@ -769,6 +760,84 @@
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                     "unionType": "Fusion"
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.07971698113207547,
+                    "y": 0.10693069306930694,
+                    "uniqueID": "449382fe-c9e0-4d68-9375-b3a524962271",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.15141509433962264,
+                    "y": 0.09702970297029703,
+                    "uniqueID": "0c30f992-7293-475d-baec-d888c88d3bf7",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "449382fe-c9e0-4d68-9375-b3a524962271",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Loft",
+                    "name": "Loft",
+                    "x": 0.2122641509433962,
+                    "y": 0.11881188118811882,
+                    "uniqueID": "c783413c-1d56-4518-91cf-d9ae448324d4",
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1747858145860,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": "0c30f992-7293-475d-baec-d888c88d3bf7",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1747858145860
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": "0c30f992-7293-475d-baec-d888c88d3bf7"
+                        },
+                        {
+                            "name": "Shape 3",
+                            "ioValue": null
+                        }
+                    ],
+                    "description": "Joins two or more shapes into a single solid by filling in the space between them.",
+                    "closedSelection": 0
                 }
             ],
             "allConnectors": [
@@ -914,7 +983,7 @@
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
                     "ap1ID": 1747858145860,
-                    "ap2ID": 1747858218512
+                    "ap2ID": "c783413c-1d56-4518-91cf-d9ae448324d4"
                 },
                 {
                     "ap1Name": "geometry",
@@ -963,6 +1032,18 @@
                     "ap2Name": "geometry2",
                     "ap1ID": "919d93e1-9c02-44da-a2eb-88e9c32420e4",
                     "ap2ID": 1747783568300
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "449382fe-c9e0-4d68-9375-b3a524962271",
+                    "ap2ID": "0c30f992-7293-475d-baec-d888c88d3bf7"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap1ID": "0c30f992-7293-475d-baec-d888c88d3bf7",
+                    "ap2ID": "c783413c-1d56-4518-91cf-d9ae448324d4"
                 }
             ],
             "fileTypeVersion": 1,
