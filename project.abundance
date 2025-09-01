@@ -297,8 +297,8 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 20,
-                            "currentEquation": null
+                            "ioValue": 15,
+                            "currentEquation": "15"
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -306,8 +306,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.6404494382022472,
-                    "y": 0.31137724550898205,
+                    "x": 0.6409130816505707,
+                    "y": 0.3140495867768595,
                     "uniqueID": 1747783294440,
                     "ioValues": [
                         {
@@ -367,8 +367,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.11610486891385767,
-                    "y": 0.7724550898203593,
+                    "x": 0.11150131694468832,
+                    "y": 0.762396694214876,
                     "uniqueID": 1747783401542,
                     "ioValues": [
                         {
@@ -432,8 +432,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.7234416154521509,
-                    "y": 0.4690082644628099,
+                    "x": 0.7243195785776997,
+                    "y": 0.47520661157024796,
                     "uniqueID": 1747783568300,
                     "ioValues": [
                         {
@@ -555,8 +555,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.38951310861423216,
-                    "y": 0.7125748502994013,
+                    "x": 0.392449517120281,
+                    "y": 0.6942148760330579,
                     "uniqueID": 1747858062034,
                     "ioValues": [
                         {
