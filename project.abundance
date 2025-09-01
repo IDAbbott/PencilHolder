@@ -162,8 +162,8 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 15.6,
-                            "currentEquation": null
+                            "ioValue": 15.3,
+                            "currentEquation": "15.3"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -193,7 +193,7 @@
                         {
                             "name": "zDist",
                             "ioValue": 20,
-                            "currentEquation": "20"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -572,7 +572,7 @@
                         {
                             "name": "diameter",
                             "ioValue": 20.1,
-                            "currentEquation": "20.1"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new circle."
@@ -754,8 +754,8 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 15,
-                            "currentEquation": "15"
+                            "ioValue": 14.8,
+                            "currentEquation": "14.8"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -785,7 +785,7 @@
                         {
                             "name": "zDist",
                             "ioValue": 10,
-                            "currentEquation": "10"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -793,8 +793,8 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.46367924528301885,
-                    "y": 0.5287128712871287,
+                    "x": 0.4650943396226416,
+                    "y": 0.5306930693069307,
                     "uniqueID": "c783413c-1d56-4518-91cf-d9ae448324d4",
                     "ioValues": [
                         {
@@ -1084,6 +1084,6 @@
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
