@@ -83,7 +83,7 @@
                         {
                             "name": "height",
                             "ioValue": 10,
-                            "currentEquation": "10"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -148,7 +148,7 @@
                         {
                             "name": "zDist",
                             "ioValue": 9,
-                            "currentEquation": "9"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -156,8 +156,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.17134831460674158,
-                    "y": 0.5848303393213573,
+                    "x": 0.08066037735849056,
+                    "y": 0.5405940594059405,
                     "uniqueID": 1747782965538,
                     "ioValues": [
                         {
@@ -193,7 +193,7 @@
                         {
                             "name": "zDist",
                             "ioValue": 10,
-                            "currentEquation": "10"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -278,7 +278,7 @@
                         {
                             "name": "zDist",
                             "ioValue": 10,
-                            "currentEquation": "10"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -298,7 +298,7 @@
                         {
                             "name": "height",
                             "ioValue": 15,
-                            "currentEquation": "15"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -332,14 +332,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.17120280948200176,
-                    "y": 0.7086776859504131,
+                    "x": 0.16839622641509433,
+                    "y": 0.6613861386138613,
                     "uniqueID": 1747783332761,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 2.3,
-                            "currentEquation": "2.3"
+                            "ioValue": 2.8,
+                            "currentEquation": "2.8"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -359,7 +359,7 @@
                         {
                             "name": "height",
                             "ioValue": 55,
-                            "currentEquation": "55"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -367,8 +367,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.11150131694468832,
-                    "y": 0.762396694214876,
+                    "x": 0.11367924528301886,
+                    "y": 0.7603960396039604,
                     "uniqueID": 1747783401542,
                     "ioValues": [
                         {
@@ -637,7 +637,7 @@
                         {
                             "name": "zDist",
                             "ioValue": -15,
-                            "currentEquation": "-15"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
