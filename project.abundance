@@ -156,8 +156,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.08254716981132076,
-                    "y": 0.5504950495049505,
+                    "x": 0.0429245283018868,
+                    "y": 0.5524752475247524,
                     "uniqueID": 1747782965538,
                     "ioValues": [
                         {
@@ -171,8 +171,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.28932584269662925,
-                    "y": 0.5588822355289421,
+                    "x": 0.23160377358490566,
+                    "y": 0.5108910891089109,
                     "uniqueID": 1747782975050,
                     "ioValues": [
                         {
@@ -192,37 +192,17 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 10,
-                            "currentEquation": null
+                            "ioValue": 20,
+                            "currentEquation": "20"
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
                 },
                 {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 0.4363207547169811,
-                    "y": 0.5801980198019802,
-                    "uniqueID": 1747782985158,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": 1747782975050,
-                            "currentEquation": null
-                        },
-                        {
-                            "name": "height",
-                            "ioValue": 10,
-                            "currentEquation": null
-                        }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
-                },
-                {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.533801580333626,
-                    "y": 0.41528925619834706,
+                    "x": 0.5363207547169812,
+                    "y": 0.40594059405940597,
                     "uniqueID": 1747783026406,
                     "ioValues": [
                         {
@@ -232,7 +212,7 @@
                         },
                         {
                             "name": "geometry2",
-                            "ioValue": 1747782985158,
+                            "ioValue": "c783413c-1d56-4518-91cf-d9ae448324d4",
                             "currentEquation": null
                         }
                     ],
@@ -332,8 +312,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.16839622641509433,
-                    "y": 0.6613861386138613,
+                    "x": 0.18537735849056605,
+                    "y": 0.6970297029702971,
                     "uniqueID": 1747783332761,
                     "ioValues": [
                         {
@@ -600,8 +580,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.032547169811320754,
-                    "y": 0.4514851485148515,
+                    "x": 0.03962264150943396,
+                    "y": 0.33861386138613864,
                     "uniqueID": 1747858149469,
                     "ioValues": [
                         {
@@ -645,8 +625,8 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.25235849056603776,
-                    "y": 0.2316831683168317,
+                    "x": 0.25943396226415094,
+                    "y": 0.2,
                     "uniqueID": 1747858218512,
                     "ioValues": [
                         {
@@ -768,14 +748,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.07971698113207547,
-                    "y": 0.10693069306930694,
+                    "x": 0.03349056603773585,
+                    "y": 0.7069306930693069,
                     "uniqueID": "449382fe-c9e0-4d68-9375-b3a524962271",
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10,
-                            "currentEquation": null
+                            "ioValue": 15,
+                            "currentEquation": "15"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -783,8 +763,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.15141509433962264,
-                    "y": 0.09702970297029703,
+                    "x": 0.1556603773584906,
+                    "y": 0.6059405940594059,
                     "uniqueID": "0c30f992-7293-475d-baec-d888c88d3bf7",
                     "ioValues": [
                         {
@@ -813,30 +793,30 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.2122641509433962,
-                    "y": 0.11881188118811882,
+                    "x": 0.46367924528301885,
+                    "y": 0.5287128712871287,
                     "uniqueID": "c783413c-1d56-4518-91cf-d9ae448324d4",
                     "ioValues": [
                         {
-                            "name": "Shape 1",
-                            "ioValue": 1747858145860,
+                            "name": "Shape 2",
+                            "ioValue": 1747782975050,
                             "currentEquation": null
                         },
                         {
-                            "name": "Shape 2",
+                            "name": "Shape 3",
                             "ioValue": "0c30f992-7293-475d-baec-d888c88d3bf7",
                             "currentEquation": null
                         },
                         {
-                            "name": "Shape 1",
-                            "ioValue": 1747858145860
-                        },
-                        {
                             "name": "Shape 2",
-                            "ioValue": "0c30f992-7293-475d-baec-d888c88d3bf7"
+                            "ioValue": 1747782975050
                         },
                         {
                             "name": "Shape 3",
+                            "ioValue": "0c30f992-7293-475d-baec-d888c88d3bf7"
+                        },
+                        {
+                            "name": "Shape 4",
                             "ioValue": null
                         }
                     ],
@@ -883,15 +863,9 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "geometry",
+                    "ap2Name": "Shape 2",
                     "ap1ID": 1747782975050,
-                    "ap2ID": 1747782985158
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry2",
-                    "ap1ID": 1747782985158,
-                    "ap2ID": 1747783026406
+                    "ap2ID": "c783413c-1d56-4518-91cf-d9ae448324d4"
                 },
                 {
                     "ap1Name": "geometry",
@@ -985,12 +959,6 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 1",
-                    "ap1ID": 1747858145860,
-                    "ap2ID": "c783413c-1d56-4518-91cf-d9ae448324d4"
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
                     "ap1ID": 1747858145860,
                     "ap2ID": 1747858218512
@@ -1051,9 +1019,15 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
+                    "ap2Name": "Shape 3",
                     "ap1ID": "0c30f992-7293-475d-baec-d888c88d3bf7",
                     "ap2ID": "c783413c-1d56-4518-91cf-d9ae448324d4"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": "c783413c-1d56-4518-91cf-d9ae448324d4",
+                    "ap2ID": 1747783026406
                 }
             ],
             "fileTypeVersion": 1,
