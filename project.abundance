@@ -51,8 +51,8 @@
                 {
                     "atomType": "RegularPolygon",
                     "name": "RegularPolygon",
-                    "x": 0.30754716981132074,
-                    "y": 0.10297029702970296,
+                    "x": 0.3608490566037736,
+                    "y": 0.07920792079207921,
                     "uniqueID": 1747782809228,
                     "ioValues": [
                         {
@@ -71,8 +71,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.44386792452830187,
-                    "y": 0.12673267326732673,
+                    "x": 0.5419811320754717,
+                    "y": 0.10693069306930694,
                     "uniqueID": 1747782831291,
                     "ioValues": [
                         {
@@ -156,8 +156,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.08066037735849056,
-                    "y": 0.5405940594059405,
+                    "x": 0.08254716981132076,
+                    "y": 0.5504950495049505,
                     "uniqueID": 1747782965538,
                     "ioValues": [
                         {
@@ -201,8 +201,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.40355805243445697,
-                    "y": 0.5568862275449102,
+                    "x": 0.4363207547169811,
+                    "y": 0.5801980198019802,
                     "uniqueID": 1747782985158,
                     "ioValues": [
                         {
@@ -306,8 +306,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.6409130816505707,
-                    "y": 0.3140495867768595,
+                    "x": 0.6396226415094339,
+                    "y": 0.30495049504950494,
                     "uniqueID": 1747783294440,
                     "ioValues": [
                         {
@@ -585,8 +585,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.11462264150943396,
-                    "y": 0.2316831683168317,
+                    "x": 0.10660377358490566,
+                    "y": 0.19801980198019803,
                     "uniqueID": 1747858145860,
                     "ioValues": [
                         {
@@ -600,8 +600,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.04764150943396226,
-                    "y": 0.44356435643564357,
+                    "x": 0.032547169811320754,
+                    "y": 0.4514851485148515,
                     "uniqueID": 1747858149469,
                     "ioValues": [
                         {
@@ -615,7 +615,7 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.10754716981132076,
+                    "x": 0.09481132075471697,
                     "y": 0.3603960396039604,
                     "uniqueID": 1747858153723,
                     "ioValues": [
@@ -645,8 +645,8 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.22971698113207548,
-                    "y": 0.2594059405940594,
+                    "x": 0.25235849056603776,
+                    "y": 0.2316831683168317,
                     "uniqueID": 1747858218512,
                     "ioValues": [
                         {
@@ -656,7 +656,7 @@
                         },
                         {
                             "name": "Shape 3",
-                            "ioValue": "",
+                            "ioValue": 1747858145860,
                             "currentEquation": null
                         },
                         {
@@ -665,7 +665,11 @@
                         },
                         {
                             "name": "Shape 3",
-                            "ioValue": ""
+                            "ioValue": 1747858145860
+                        },
+                        {
+                            "name": "Shape 4",
+                            "ioValue": null
                         }
                     ],
                     "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
@@ -800,8 +804,8 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0,
-                            "currentEquation": null
+                            "ioValue": 10,
+                            "currentEquation": "10"
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -984,6 +988,12 @@
                     "ap2Name": "Shape 1",
                     "ap1ID": 1747858145860,
                     "ap2ID": "c783413c-1d56-4518-91cf-d9ae448324d4"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 3",
+                    "ap1ID": 1747858145860,
+                    "ap2ID": 1747858218512
                 },
                 {
                     "ap1Name": "geometry",
