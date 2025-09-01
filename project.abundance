@@ -51,19 +51,19 @@
                 {
                     "atomType": "RegularPolygon",
                     "name": "RegularPolygon",
-                    "x": 0.29868913857677903,
-                    "y": 0.059880239520958084,
+                    "x": 0.30283018867924527,
+                    "y": 0.07722772277227723,
                     "uniqueID": 1747782809228,
                     "ioValues": [
                         {
                             "name": "number of sides",
                             "ioValue": 6,
-                            "currentEquation": null
+                            "currentEquation": "6"
                         },
                         {
                             "name": "diameter",
-                            "ioValue": 20,
-                            "currentEquation": null
+                            "ioValue": 19,
+                            "currentEquation": "19"
                         }
                     ],
                     "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -71,8 +71,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4410112359550562,
-                    "y": 0.0658682634730539,
+                    "x": 0.44386792452830187,
+                    "y": 0.12673267326732673,
                     "uniqueID": 1747782831291,
                     "ioValues": [
                         {
@@ -91,8 +91,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.17228464419475656,
-                    "y": 0.45508982035928147,
+                    "x": 0.17264150943396225,
+                    "y": 0.45544554455445546,
                     "uniqueID": 1747782837962,
                     "ioValues": [
                         {
@@ -162,8 +162,8 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 15,
-                            "currentEquation": null
+                            "ioValue": 15.6,
+                            "currentEquation": "15.6"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -591,8 +591,8 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 20,
-                            "currentEquation": null
+                            "ioValue": 21,
+                            "currentEquation": "21"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -982,7 +982,7 @@
                 },
                 {
                     "name": "File Type",
-                    "ioValue": "SVG",
+                    "ioValue": "STEP",
                     "currentEquation": null
                 },
                 {
@@ -997,7 +997,7 @@
                 }
             ],
             "description": "Export Atom, let's you choose a type of file to Export.",
-            "type": null,
+            "type": "STEP",
             "resolution": 96,
             "importIndex": 0,
             "partName": "PencilHolder"
