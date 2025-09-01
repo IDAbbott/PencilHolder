@@ -332,14 +332,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.1704119850187266,
-                    "y": 0.7145708582834331,
+                    "x": 0.17120280948200176,
+                    "y": 0.7086776859504131,
                     "uniqueID": 1747783332761,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 2.5,
-                            "currentEquation": null
+                            "ioValue": 2.3,
+                            "currentEquation": "2.3"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -430,24 +430,6 @@
                     "description": "Extrudes a 2D shape. Input can be negitive. "
                 },
                 {
-                    "atomType": "Assembly",
-                    "name": "Assembly",
-                    "x": 0.5310043668122271,
-                    "y": 0.6811279826464208,
-                    "uniqueID": 1747783533914,
-                    "ioValues": [
-                        {
-                            "name": "Shape 2",
-                            "ioValue": 1747783443241
-                        },
-                        {
-                            "name": "Shape 3",
-                            "ioValue": 1747858062034
-                        }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-                },
-                {
                     "atomType": "Difference",
                     "name": "Difference",
                     "x": 0.7191011235955056,
@@ -461,7 +443,7 @@
                         },
                         {
                             "name": "geometry2",
-                            "ioValue": 1747783533914,
+                            "ioValue": "919d93e1-9c02-44da-a2eb-88e9c32420e4",
                             "currentEquation": null
                         }
                     ],
@@ -539,8 +521,8 @@
                 {
                     "atomType": "Export",
                     "name": "Export",
-                    "x": 0.795880149812734,
-                    "y": 0.6407185628742514,
+                    "x": 0.7919227392449517,
+                    "y": 0.628099173553719,
                     "uniqueID": 1747783801300,
                     "ioValues": [
                         {
@@ -550,7 +532,7 @@
                         },
                         {
                             "name": "File Type",
-                            "ioValue": "STL",
+                            "ioValue": "STEP",
                             "currentEquation": null
                         },
                         {
@@ -565,7 +547,7 @@
                         }
                     ],
                     "description": "Export Atom, let's you choose a type of file to Export.",
-                    "type": "STL",
+                    "type": "STEP",
                     "resolution": 96,
                     "importIndex": 0,
                     "partName": "PH"
@@ -768,6 +750,25 @@
                         }
                     ],
                     "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Fusion",
+                    "name": "Fusion",
+                    "x": 0.5706760316066725,
+                    "y": 0.6962809917355371,
+                    "uniqueID": "919d93e1-9c02-44da-a2eb-88e9c32420e4",
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1747858062034
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1747783443241
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                    "unionType": "Fusion"
                 }
             ],
             "allConnectors": [
@@ -877,13 +878,7 @@
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 2",
                     "ap1ID": 1747783443241,
-                    "ap2ID": 1747783533914
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry2",
-                    "ap1ID": 1747783533914,
-                    "ap2ID": 1747783568300
+                    "ap2ID": "919d93e1-9c02-44da-a2eb-88e9c32420e4"
                 },
                 {
                     "ap1Name": "geometry",
@@ -911,9 +906,9 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 3",
+                    "ap2Name": "Shape 1",
                     "ap1ID": 1747858062034,
-                    "ap2ID": 1747783533914
+                    "ap2ID": "919d93e1-9c02-44da-a2eb-88e9c32420e4"
                 },
                 {
                     "ap1Name": "geometry",
@@ -962,6 +957,12 @@
                     "ap2Name": "geometry",
                     "ap1ID": 1747859028164,
                     "ap2ID": 1747783724528
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap1ID": "919d93e1-9c02-44da-a2eb-88e9c32420e4",
+                    "ap2ID": 1747783568300
                 }
             ],
             "fileTypeVersion": 1,
@@ -974,6 +975,11 @@
             "y": 0.5433884297520661,
             "uniqueID": "3826a40a-f8f6-42cf-851a-41f0e143bd8c",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747782793075,
+                    "currentEquation": null
+                },
                 {
                     "name": "File Type",
                     "ioValue": "SVG",
@@ -1003,6 +1009,12 @@
             "ap2Name": "number or geometry",
             "ap1ID": 1747782793075,
             "ap2ID": 1747782754046
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": 1747782793075,
+            "ap2ID": "3826a40a-f8f6-42cf-851a-41f0e143bd8c"
         }
     ],
     "unitsKey": "MM",
