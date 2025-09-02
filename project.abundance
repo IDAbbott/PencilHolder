@@ -163,7 +163,7 @@
                         {
                             "name": "diameter",
                             "ioValue": 15.3,
-                            "currentEquation": "15.3"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new circle."
@@ -432,14 +432,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.17134831460674158,
-                    "y": 0.9520958083832335,
+                    "x": 0.6424528301886792,
+                    "y": 0.7287128712871287,
                     "uniqueID": 1747783666493,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 5,
-                            "currentEquation": null
+                            "ioValue": 5.5,
+                            "currentEquation": "5.5"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -447,8 +447,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.3146067415730337,
-                    "y": 0.9640718562874251,
+                    "x": 0.6971698113207547,
+                    "y": 0.7524752475247525,
                     "uniqueID": 1747783679076,
                     "ioValues": [
                         {
@@ -458,8 +458,8 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 5,
-                            "currentEquation": null
+                            "ioValue": 3,
+                            "currentEquation": "3"
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -467,8 +467,8 @@
                 {
                     "atomType": "Export",
                     "name": "Export",
-                    "x": 0.6704119850187267,
-                    "y": 0.8343313373253493,
+                    "x": 0.9202830188679244,
+                    "y": 0.8554455445544555,
                     "uniqueID": 1747783724528,
                     "ioValues": [
                         {
@@ -488,7 +488,7 @@
                         },
                         {
                             "name": "Part Name",
-                            "ioValue": "PH",
+                            "ioValue": "PH Stud",
                             "currentEquation": null
                         }
                     ],
@@ -496,13 +496,13 @@
                     "type": "STEP",
                     "resolution": 96,
                     "importIndex": 0,
-                    "partName": "PH"
+                    "partName": "PH Stud"
                 },
                 {
                     "atomType": "Export",
                     "name": "Export",
-                    "x": 0.797190517998244,
-                    "y": 0.640495867768595,
+                    "x": 0.8240566037735849,
+                    "y": 0.22970297029702968,
                     "uniqueID": 1747783801300,
                     "ioValues": [
                         {
@@ -658,14 +658,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.09737827715355804,
-                    "y": 0.8922155688622754,
+                    "x": 0.47877358490566035,
+                    "y": 0.8990099009900989,
                     "uniqueID": 1747858941013,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 3,
-                            "currentEquation": null
+                            "ioValue": 2,
+                            "currentEquation": "2"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -673,8 +673,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.2097378277153558,
-                    "y": 0.8582834331337326,
+                    "x": 0.5471698113207547,
+                    "y": 0.9148514851485149,
                     "uniqueID": 1747858956602,
                     "ioValues": [
                         {
@@ -693,8 +693,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.3155430711610487,
-                    "y": 0.8662674650698602,
+                    "x": 0.620754716981132,
+                    "y": 0.9148514851485149,
                     "uniqueID": 1747858968269,
                     "ioValues": [
                         {
@@ -704,13 +704,13 @@
                         }
                     ],
                     "description": "Changes the color of the shape.",
-                    "selectedColorIndex": 22
+                    "selectedColorIndex": 1
                 },
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.4868913857677903,
-                    "y": 0.8802395209580839,
+                    "x": 0.8018867924528302,
+                    "y": 0.8693069306930693,
                     "uniqueID": 1747859028164,
                     "ioValues": [
                         {
@@ -755,7 +755,7 @@
                         {
                             "name": "diameter",
                             "ioValue": 14.8,
-                            "currentEquation": "14.8"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new circle."
