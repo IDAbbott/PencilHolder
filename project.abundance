@@ -26,8 +26,8 @@
         {
             "atomType": "Molecule",
             "name": "PH",
-            "x": 0.17696629213483145,
-            "y": 0.2375249500998004,
+            "x": 0.17822651448639157,
+            "y": 0.23760330578512398,
             "uniqueID": 1747782793075,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -920,6 +920,36 @@
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                     "unionType": "Fusion"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.5452151009657594,
+                    "y": 0.5475206611570248,
+                    "uniqueID": "560a1d3c-39ec-4d5f-8910-daf97351d1d8",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "6c957a25-cfa9-476a-a61f-9d6516651271",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 5,
+                            "currentEquation": "5"
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 22,
+                            "currentEquation": "22"
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
             "allConnectors": [
@@ -1136,6 +1166,12 @@
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
+                    "ap1ID": "6c957a25-cfa9-476a-a61f-9d6516651271",
+                    "ap2ID": "560a1d3c-39ec-4d5f-8910-daf97351d1d8"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
                     "ap1ID": "be7f60c9-562a-4dd9-9638-7d4fa9fc4451",
                     "ap2ID": "6c957a25-cfa9-476a-a61f-9d6516651271"
                 },
@@ -1150,7 +1186,8 @@
                     "ap2Name": "geometry",
                     "ap1ID": "524f8478-6e96-4e0b-a602-b56ce084f084",
                     "ap2ID": 1747783724528
-                }
+                },
+                null
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
