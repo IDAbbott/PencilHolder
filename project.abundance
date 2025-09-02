@@ -432,14 +432,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.6424528301886792,
-                    "y": 0.7287128712871287,
+                    "x": 0.6918349429323969,
+                    "y": 0.634297520661157,
                     "uniqueID": 1747783666493,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 5.5,
-                            "currentEquation": null
+                            "ioValue": 5,
+                            "currentEquation": "5"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -447,8 +447,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.6971698113207547,
-                    "y": 0.7524752475247525,
+                    "x": 0.784899034240562,
+                    "y": 0.6632231404958678,
                     "uniqueID": 1747783679076,
                     "ioValues": [
                         {
@@ -471,11 +471,6 @@
                     "y": 0.8613861386138614,
                     "uniqueID": 1747783724528,
                     "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": 1747859028164,
-                            "currentEquation": null
-                        },
                         {
                             "name": "File Type",
                             "ioValue": "STEP",
@@ -580,8 +575,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.03962264150943396,
-                    "y": 0.33861386138613864,
+                    "x": 0.041264266900790166,
+                    "y": 0.32851239669421484,
                     "uniqueID": 1747858149469,
                     "ioValues": [
                         {
@@ -658,14 +653,14 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.47058823529411764,
-                    "y": 0.9297520661157025,
+                    "x": 0.4635645302897278,
+                    "y": 0.933884297520661,
                     "uniqueID": 1747858941013,
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 2.8,
-                            "currentEquation": null
+                            "ioValue": 3.8,
+                            "currentEquation": "3.8"
                         }
                     ],
                     "description": "Creates a new circle."
@@ -705,26 +700,6 @@
                     ],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 1
-                },
-                {
-                    "atomType": "Difference",
-                    "name": "Difference",
-                    "x": 0.8018867924528302,
-                    "y": 0.8693069306930693,
-                    "uniqueID": 1747859028164,
-                    "ioValues": [
-                        {
-                            "name": "geometry1",
-                            "ioValue": 1747783679076,
-                            "currentEquation": null
-                        },
-                        {
-                            "name": "geometry2",
-                            "ioValue": 1747858968269,
-                            "currentEquation": null
-                        }
-                    ],
-                    "description": "Subtracts shape two from shape one."
                 },
                 {
                     "atomType": "Fusion",
@@ -923,36 +898,16 @@
                     "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
                 },
                 {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 0.514486391571554,
-                    "y": 0.8140495867768596,
-                    "uniqueID": "832868bf-b3a8-4a96-b1b0-40e910b3664d",
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 10,
-                            "currentEquation": null
-                        }
-                    ],
-                    "description": "Creates a new circle."
-                },
-                {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.582089552238806,
-                    "y": 0.7727272727272727,
+                    "x": 0.6286215978928885,
+                    "y": 0.7913223140495868,
                     "uniqueID": "04e960ef-c90a-4f55-aab2-73468b476bab",
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": "832868bf-b3a8-4a96-b1b0-40e910b3664d",
-                            "currentEquation": null
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10,
-                            "currentEquation": null
+                            "ioValue": 3,
+                            "currentEquation": "3"
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negative."
@@ -1081,12 +1036,6 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "geometry1",
-                    "ap1ID": 1747783679076,
-                    "ap2ID": 1747859028164
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
                     "ap1ID": 1747858062034,
                     "ap2ID": "919d93e1-9c02-44da-a2eb-88e9c32420e4"
@@ -1126,18 +1075,6 @@
                     "ap2Name": "geometry",
                     "ap1ID": 1747858956602,
                     "ap2ID": 1747858968269
-                },
-                {
-                    "ap1Name": "color",
-                    "ap2Name": "geometry2",
-                    "ap1ID": 1747858968269,
-                    "ap2ID": 1747859028164
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap1ID": 1747859028164,
-                    "ap2ID": 1747783724528
                 },
                 {
                     "ap1Name": "geometry",
@@ -1186,12 +1123,6 @@
                     "ap2Name": "geometry",
                     "ap1ID": "63b4227e-41b1-420c-a25c-2a08babc6e12",
                     "ap2ID": "be7f60c9-562a-4dd9-9638-7d4fa9fc4451"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap1ID": "832868bf-b3a8-4a96-b1b0-40e910b3664d",
-                    "ap2ID": "04e960ef-c90a-4f55-aab2-73468b476bab"
                 }
             ],
             "fileTypeVersion": 1,
