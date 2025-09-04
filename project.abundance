@@ -14,19 +14,13 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1747782754046,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1747782793075,
-                    "currentEquation": null
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Molecule",
             "name": "PH",
-            "x": 0.1747146619841967,
+            "x": 0.17120280948200176,
             "y": 0.20247933884297523,
             "uniqueID": 1747782793075,
             "ioValues": [],
@@ -472,8 +466,8 @@
                         {
                             "atomType": "Fusion",
                             "name": "Fusion",
-                            "x": 0.6865671641791045,
-                            "y": 0.45041322314049587,
+                            "x": 0.6856892010535558,
+                            "y": 0.45661157024793386,
                             "uniqueID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc",
                             "ioValues": [
                                 {
@@ -513,8 +507,8 @@
                             "ioValues": [
                                 {
                                     "name": "diameter",
-                                    "ioValue": 2,
-                                    "currentEquation": null
+                                    "ioValue": 3,
+                                    "currentEquation": "3"
                                 }
                             ],
                             "description": "Creates a new circle."
@@ -738,8 +732,8 @@
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 7,
-                                    "currentEquation": "7"
+                                    "ioValue": 6.4,
+                                    "currentEquation": "6.4"
                                 },
                                 {
                                     "name": "y length",
@@ -788,8 +782,8 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 6.2,
-                                    "currentEquation": "6.2"
+                                    "ioValue": 6.5,
+                                    "currentEquation": "6.5"
                                 },
                                 {
                                     "name": "zDist",
@@ -1761,15 +1755,10 @@
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.2943396226415094,
-            "y": 0.5445544554455445,
+            "x": 0.30201931518876207,
+            "y": 0.5433884297520661,
             "uniqueID": "3826a40a-f8f6-42cf-851a-41f0e143bd8c",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1747782793075,
-                    "currentEquation": null
-                },
                 {
                     "name": "File Type",
                     "ioValue": "STEP",
@@ -1793,20 +1782,7 @@
             "partName": "PencilHolder"
         }
     ],
-    "allConnectors": [
-        {
-            "ap1Name": "geometry or number",
-            "ap2Name": "number or geometry",
-            "ap1ID": 1747782793075,
-            "ap2ID": 1747782754046
-        },
-        {
-            "ap1Name": "geometry or number",
-            "ap2Name": "geometry",
-            "ap1ID": 1747782793075,
-            "ap2ID": "3826a40a-f8f6-42cf-851a-41f0e143bd8c"
-        }
-    ],
+    "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": [],
