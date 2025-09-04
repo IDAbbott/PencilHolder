@@ -898,7 +898,7 @@
                         {
                             "atomType": "Loft",
                             "name": "Loft",
-                            "x": 0.30728709394205445,
+                            "x": 0.3064091308165057,
                             "y": 0.3801652892561983,
                             "uniqueID": "0a2cb4d1-3f23-4952-a5dc-3597320a41ac",
                             "ioValues": [
@@ -908,8 +908,8 @@
                                     "currentEquation": null
                                 },
                                 {
-                                    "name": "Shape 3",
-                                    "ioValue": "56dc27a1-e4ef-4575-a790-767633d99c61",
+                                    "name": "Shape 4",
+                                    "ioValue": "fef85749-9f55-462d-adab-91a8320200ac",
                                     "currentEquation": null
                                 },
                                 {
@@ -917,11 +917,11 @@
                                     "ioValue": "ab5b1467-6c5f-4020-a437-9f91acd8c732"
                                 },
                                 {
-                                    "name": "Shape 3",
-                                    "ioValue": "56dc27a1-e4ef-4575-a790-767633d99c61"
+                                    "name": "Shape 4",
+                                    "ioValue": "fef85749-9f55-462d-adab-91a8320200ac"
                                 },
                                 {
-                                    "name": "Shape 4",
+                                    "name": "Shape 5",
                                     "ioValue": null
                                 }
                             ],
@@ -1224,8 +1224,8 @@
                         {
                             "atomType": "Assembly",
                             "name": "Assembly",
-                            "x": 0.6839332748024582,
-                            "y": 0.4524793388429752,
+                            "x": 0.6812993854258121,
+                            "y": 0.47727272727272724,
                             "uniqueID": "6e000ec4-b56d-4a3c-8ebf-c51a7dd209d2",
                             "ioValues": [
                                 {
@@ -1315,6 +1315,36 @@
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negative."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.16681299385425813,
+                            "y": 0.3574380165289256,
+                            "uniqueID": "fef85749-9f55-462d-adab-91a8320200ac",
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "56dc27a1-e4ef-4575-a790-767633d99c61",
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0,
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0,
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": -5,
+                                    "currentEquation": "-5"
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
                         }
                     ],
                     "allConnectors": [
@@ -1350,9 +1380,9 @@
                         },
                         {
                             "ap1Name": "geometry",
-                            "ap2Name": "Shape 3",
+                            "ap2Name": "geometry",
                             "ap1ID": "56dc27a1-e4ef-4575-a790-767633d99c61",
-                            "ap2ID": "0a2cb4d1-3f23-4952-a5dc-3597320a41ac"
+                            "ap2ID": "fef85749-9f55-462d-adab-91a8320200ac"
                         },
                         {
                             "ap1Name": "geometry",
@@ -1401,6 +1431,12 @@
                             "ap2Name": "Shape 5",
                             "ap1ID": "de24a8c7-d63c-416b-8d88-e384f8ebcdd6",
                             "ap2ID": "6e000ec4-b56d-4a3c-8ebf-c51a7dd209d2"
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 4",
+                            "ap1ID": "fef85749-9f55-462d-adab-91a8320200ac",
+                            "ap2ID": "0a2cb4d1-3f23-4952-a5dc-3597320a41ac"
                         }
                     ],
                     "fileTypeVersion": 1,
