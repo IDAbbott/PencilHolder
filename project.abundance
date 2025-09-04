@@ -14,7 +14,13 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1747782754046,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6",
+                    "currentEquation": null
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -1755,10 +1761,15 @@
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.30201931518876207,
-            "y": 0.5433884297520661,
+            "x": 0.48463564530289727,
+            "y": 0.7004132231404959,
             "uniqueID": "3826a40a-f8f6-42cf-851a-41f0e143bd8c",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6",
+                    "currentEquation": null
+                },
                 {
                     "name": "File Type",
                     "ioValue": "STEP",
@@ -1780,9 +1791,58 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "PencilHolder"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.35645302897278314,
+            "y": 0.3140495867768595,
+            "uniqueID": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1747782793075,
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 15,
+                    "currentEquation": "15"
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": 1747782793075,
+            "ap2ID": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6",
+            "ap2ID": 1747782754046
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6",
+            "ap2ID": "3826a40a-f8f6-42cf-851a-41f0e143bd8c"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": [],
