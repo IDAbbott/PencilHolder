@@ -42,7 +42,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1747783568300,
+                            "ioValue": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
                             "currentEquation": null
                         }
                     ],
@@ -51,8 +51,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.655838454784899,
-                    "y": 0.5103305785123967,
+                    "x": 0.3977172958735733,
+                    "y": 0.49380165289256195,
                     "uniqueID": 1747783568300,
                     "ioValues": [
                         {
@@ -71,13 +71,13 @@
                 {
                     "atomType": "Export",
                     "name": "Export",
-                    "x": 0.8240566037735849,
-                    "y": 0.22970297029702968,
+                    "x": 0.752414398595259,
+                    "y": 0.23347107438016526,
                     "uniqueID": 1747783801300,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1747783568300,
+                            "ioValue": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
                             "currentEquation": null
                         },
                         {
@@ -105,8 +105,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Stopper",
-                    "x": 0.6549604916593503,
-                    "y": 0.11157024793388429,
+                    "x": 0.14574187884108866,
+                    "y": 0.8450413223140496,
                     "uniqueID": "93099069-aceb-4c46-a296-8b3ae8d9e1c9",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -317,8 +317,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "NegSpace",
-                    "x": 0.3476733977172959,
-                    "y": 0.6818181818181819,
+                    "x": 0.13871817383669885,
+                    "y": 0.6776859504132231,
                     "uniqueID": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -708,8 +708,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "MainBody",
-                    "x": 0.3722563652326602,
-                    "y": 0.33264462809917356,
+                    "x": 0.1264266900790167,
+                    "y": 0.32644628099173556,
                     "uniqueID": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1318,20 +1318,68 @@
                     ],
                     "fileTypeVersion": 1,
                     "compiledBom": []
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.4214223002633889,
+                    "y": 0.8347107438016529,
+                    "uniqueID": "fb91a9f9-522f-473b-92ff-ffc772591be9",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "93099069-aceb-4c46-a296-8b3ae8d9e1c9",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 20,
+                            "currentEquation": "20"
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": -15,
+                            "currentEquation": "-15"
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.6356453028972783,
+                    "y": 0.5929752066115703,
+                    "uniqueID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1747783568300
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": "fb91a9f9-522f-473b-92ff-ffc772591be9"
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
                 }
             ],
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
+                    "ap2Name": "Shape 1",
                     "ap1ID": 1747783568300,
-                    "ap2ID": 1747782793738
+                    "ap2ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee"
                 },
                 {
-                    "ap1Name": "geometry",
+                    "ap1Name": "geometry or number",
                     "ap2Name": "geometry",
-                    "ap1ID": 1747783568300,
-                    "ap2ID": 1747783801300
+                    "ap1ID": "93099069-aceb-4c46-a296-8b3ae8d9e1c9",
+                    "ap2ID": "fb91a9f9-522f-473b-92ff-ffc772591be9"
                 },
                 {
                     "ap1Name": "geometry or number",
@@ -1344,6 +1392,24 @@
                     "ap2Name": "geometry1",
                     "ap1ID": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
                     "ap2ID": 1747783568300
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap1ID": "fb91a9f9-522f-473b-92ff-ffc772591be9",
+                    "ap2ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
+                    "ap2ID": 1747782793738
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
+                    "ap2ID": 1747783801300
                 }
             ],
             "fileTypeVersion": 1,
