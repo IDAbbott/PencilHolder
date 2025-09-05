@@ -11,8 +11,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
+            "x": 0.9755501222493886,
+            "y": 0.4950099800399202,
             "uniqueID": 1747782754046,
             "ioValues": [
                 {
@@ -103,7 +103,13 @@
                     "x": 0.9719101123595505,
                     "y": 0.5069860279441117,
                     "uniqueID": 1747782793738,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
+                            "currentEquation": null
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -117,6 +123,11 @@
                             "name": "geometry1",
                             "ioValue": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
                             "currentEquation": null
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
+                            "currentEquation": null
                         }
                     ],
                     "description": "Subtracts shape two from shape one."
@@ -128,6 +139,11 @@
                     "y": 0.23347107438016526,
                     "uniqueID": 1747783801300,
                     "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
+                            "currentEquation": null
+                        },
                         {
                             "name": "File Type",
                             "ioValue": "STEP",
@@ -189,7 +205,7 @@
                     "ioValues": [
                         {
                             "name": "Shape 1",
-                            "ioValue": null
+                            "ioValue": 1747783568300
                         },
                         {
                             "name": "Shape 2",
@@ -426,7 +442,13 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": "9559ffad-a7b3-488a-8462-60e08e9cfbde",
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc",
+                                    "currentEquation": null
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -562,8 +584,8 @@
                         {
                             "atomType": "Fusion",
                             "name": "Fusion",
-                            "x": 0.6856892010535558,
-                            "y": 0.45661157024793386,
+                            "x": 0.6760391198044009,
+                            "y": 0.44910179640718567,
                             "uniqueID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc",
                             "ioValues": [
                                 {
@@ -580,7 +602,7 @@
                                 },
                                 {
                                     "name": "Shape 8",
-                                    "ioValue": null
+                                    "ioValue": "2a648d04-c295-40c4-82ec-65225658300c"
                                 },
                                 {
                                     "name": "Shape 9",
@@ -700,7 +722,7 @@
                                 {
                                     "name": "diameter",
                                     "ioValue": 5.7,
-                                    "currentEquation": "5.7"
+                                    "currentEquation": null
                                 }
                             ],
                             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -712,6 +734,11 @@
                             "y": 0.20041322314049587,
                             "uniqueID": "2a648d04-c295-40c4-82ec-65225658300c",
                             "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "11a772ab-8a3b-4c2a-ad01-31bed61e4bc4",
+                                    "currentEquation": null
+                                },
                                 {
                                     "name": "xDist",
                                     "ioValue": 0,
