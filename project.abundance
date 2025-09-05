@@ -90,8 +90,8 @@
         {
             "atomType": "Molecule",
             "name": "PH",
-            "x": 0.1747146619841967,
-            "y": 0.1905829596412556,
+            "x": 0.1776275353411186,
+            "y": 0.20359281437125748,
             "uniqueID": 1747782793075,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -439,8 +439,8 @@
                         {
                             "atomType": "Output",
                             "name": "Output",
-                            "x": 0.98,
-                            "y": 0.5,
+                            "x": 0.9717271051014137,
+                            "y": 0.49700598802395207,
                             "uniqueID": "9559ffad-a7b3-488a-8462-60e08e9cfbde",
                             "ioValues": [
                                 {
@@ -722,7 +722,7 @@
                                 {
                                     "name": "diameter",
                                     "ioValue": 5.7,
-                                    "currentEquation": null
+                                    "currentEquation": "5.7"
                                 }
                             ],
                             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -730,8 +730,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.6251097453906935,
-                            "y": 0.20041322314049587,
+                            "x": 0.5955746773202213,
+                            "y": 0.20758483033932135,
                             "uniqueID": "2a648d04-c295-40c4-82ec-65225658300c",
                             "ioValues": [
                                 {
@@ -780,8 +780,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.5057067603160668,
-                            "y": 0.15919282511210764,
+                            "x": 0.4339274738783036,
+                            "y": 0.12375249500998005,
                             "uniqueID": "11a772ab-8a3b-4c2a-ad01-31bed61e4bc4",
                             "ioValues": [
                                 {
