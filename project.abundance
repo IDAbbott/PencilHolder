@@ -133,40 +133,6 @@
                     "description": "Subtracts shape two from shape one."
                 },
                 {
-                    "atomType": "Export",
-                    "name": "Export",
-                    "x": 0.6852836879432624,
-                    "y": 0.22540983606557377,
-                    "uniqueID": 1747783801300,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
-                            "currentEquation": null
-                        },
-                        {
-                            "name": "File Type",
-                            "ioValue": "STEP",
-                            "currentEquation": null
-                        },
-                        {
-                            "name": "Resolution (dpi)",
-                            "ioValue": 96,
-                            "currentEquation": null
-                        },
-                        {
-                            "name": "Part Name",
-                            "ioValue": "PH",
-                            "currentEquation": null
-                        }
-                    ],
-                    "description": "Export Atom, let's you choose a type of file to Export.",
-                    "type": "STEP",
-                    "resolution": 96,
-                    "importIndex": 0,
-                    "partName": "PH"
-                },
-                {
                     "atomType": "Move",
                     "name": "Move",
                     "x": 0.4214223002633889,
@@ -199,8 +165,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.6356453028972783,
-                    "y": 0.5929752066115703,
+                    "x": 0.6320921985815603,
+                    "y": 0.5881147540983607,
                     "uniqueID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
                     "ioValues": [
                         {
@@ -2038,6 +2004,35 @@
                         }
                     ],
                     "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Export",
+                    "name": "Export",
+                    "x": 0.7473404255319149,
+                    "y": 0.22336065573770492,
+                    "uniqueID": "2deda92d-ca5a-4688-87b3-4e1ffade53b8",
+                    "ioValues": [
+                        {
+                            "name": "File Type",
+                            "ioValue": "SVG",
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Resolution (dpi)",
+                            "ioValue": 96,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "Part Name",
+                            "ioValue": "PH",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Export Atom, let's you choose a type of file to Export.",
+                    "type": null,
+                    "resolution": 96,
+                    "importIndex": 0,
+                    "partName": "PH"
                 }
             ],
             "allConnectors": [
@@ -2058,12 +2053,6 @@
                     "ap2Name": "number or geometry",
                     "ap1ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
                     "ap2ID": 1747782793738
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap1ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
-                    "ap2ID": 1747783801300
                 },
                 {
                     "ap1Name": "geometry or number",
