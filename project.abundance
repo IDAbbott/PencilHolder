@@ -550,8 +550,8 @@
                         {
                             "atomType": "Fusion",
                             "name": "Fusion",
-                            "x": 0.6760391198044009,
-                            "y": 0.44910179640718567,
+                            "x": 0.6808510638297872,
+                            "y": 0.4180327868852459,
                             "uniqueID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc",
                             "ioValues": [
                                 {
@@ -662,8 +662,8 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 30,
-                                    "currentEquation": null
+                                    "ioValue": 32,
+                                    "currentEquation": "32"
                                 },
                                 {
                                     "name": "zDist",
@@ -696,8 +696,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.5955746773202213,
-                            "y": 0.20758483033932135,
+                            "x": 0.5957446808510638,
+                            "y": 0.20081967213114754,
                             "uniqueID": "2a648d04-c295-40c4-82ec-65225658300c",
                             "ioValues": [
                                 {
@@ -737,8 +737,8 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 3,
-                                    "currentEquation": null
+                                    "ioValue": 4,
+                                    "currentEquation": "4"
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negative."
@@ -776,19 +776,19 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.15715539947322213,
-                            "y": 0.2706611570247934,
+                            "x": 0.16046099290780141,
+                            "y": 0.26229508196721313,
                             "uniqueID": "803750d8-7074-463b-9a58-c752daf98e85",
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 7,
-                                    "currentEquation": "7"
+                                    "ioValue": 5.7,
+                                    "currentEquation": "5.7"
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 4,
-                                    "currentEquation": "4"
+                                    "ioValue": 3,
+                                    "currentEquation": "3"
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -832,8 +832,8 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 5.5,
-                                    "currentEquation": "5.5"
+                                    "ioValue": 4.7,
+                                    "currentEquation": "4.7"
                                 },
                                 {
                                     "name": "zDist",
