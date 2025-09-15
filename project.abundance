@@ -551,7 +551,7 @@
                             "atomType": "Fusion",
                             "name": "Fusion",
                             "x": 0.6808510638297872,
-                            "y": 0.4180327868852459,
+                            "y": 0.42213114754098363,
                             "uniqueID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc",
                             "ioValues": [
                                 {
@@ -581,8 +581,8 @@
                         {
                             "atomType": "Circle",
                             "name": "Circle",
-                            "x": 0.08066037735849056,
-                            "y": 0.398019801980198,
+                            "x": 0.07092198581560284,
+                            "y": 0.5245901639344263,
                             "uniqueID": "0302bce4-2e0b-447b-808b-71f1c1799197",
                             "ioValues": [
                                 {
@@ -596,8 +596,8 @@
                         {
                             "atomType": "Extrude",
                             "name": "Extrude",
-                            "x": 0.2870939420544337,
-                            "y": 0.4256198347107438,
+                            "x": 0.3156028368794326,
+                            "y": 0.5512295081967213,
                             "uniqueID": "acc7031f-ed0d-41b6-a4ee-29c888a731eb",
                             "ioValues": [
                                 {
@@ -616,8 +616,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.17822651448639157,
-                            "y": 0.40289256198347106,
+                            "x": 0.18439716312056736,
+                            "y": 0.5409836065573771,
                             "uniqueID": "67401992-25c6-4015-9992-f616d547403f",
                             "ioValues": [
                                 {
@@ -646,8 +646,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.44688323090430204,
-                            "y": 0.44390243902439025,
+                            "x": 0.45390070921985815,
+                            "y": 0.5286885245901639,
                             "uniqueID": "4c89a0ef-9cab-40a1-ad32-e118740db5fb",
                             "ioValues": [
                                 {
@@ -712,13 +712,13 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 6,
-                                    "currentEquation": "6"
+                                    "ioValue": 7.5,
+                                    "currentEquation": "7.5"
                                 },
                                 {
                                     "name": "zDist",
                                     "ioValue": -3,
-                                    "currentEquation": null
+                                    "currentEquation": "-3"
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -842,6 +842,76 @@
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Rectangle",
+                            "name": "Rectangle",
+                            "x": 0.07712765957446809,
+                            "y": 0.35655737704918034,
+                            "uniqueID": "6ee7cc7f-f38d-437f-8026-00e789977b06",
+                            "ioValues": [
+                                {
+                                    "name": "x length",
+                                    "ioValue": 5,
+                                    "currentEquation": "5"
+                                },
+                                {
+                                    "name": "y length",
+                                    "ioValue": 1.5,
+                                    "currentEquation": "1.5"
+                                }
+                            ],
+                            "description": "Creates a new rectangle."
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.18528368794326242,
+                            "y": 0.3811475409836066,
+                            "uniqueID": "d1b283cc-0df9-4e66-ab65-008cc3c1a536",
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "6ee7cc7f-f38d-437f-8026-00e789977b06",
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 7,
+                                    "currentEquation": "7"
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negative."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.2916666666666667,
+                            "y": 0.3770491803278689,
+                            "uniqueID": "f80cd803-147d-4662-be79-614f802aff73",
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "d1b283cc-0df9-4e66-ab65-008cc3c1a536",
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0,
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 5,
+                                    "currentEquation": "5"
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0,
+                                    "currentEquation": null
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
                         }
                     ],
                     "allConnectors": [
@@ -952,6 +1022,18 @@
                             "ap2Name": "Shape 9",
                             "ap1ID": "ff2f0730-2f43-4ceb-97c2-1326b54a70bd",
                             "ap2ID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc"
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap1ID": "6ee7cc7f-f38d-437f-8026-00e789977b06",
+                            "ap2ID": "d1b283cc-0df9-4e66-ab65-008cc3c1a536"
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap1ID": "d1b283cc-0df9-4e66-ab65-008cc3c1a536",
+                            "ap2ID": "f80cd803-147d-4662-be79-614f802aff73"
                         }
                     ],
                     "fileTypeVersion": 1,
