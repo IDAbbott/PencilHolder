@@ -90,8 +90,8 @@
         {
             "atomType": "Export",
             "name": "Export",
-            "x": 0.28102836879432624,
-            "y": 0.5512295081967213,
+            "x": 0.2801418439716312,
+            "y": 0.5430327868852459,
             "uniqueID": "7ae2514b-bc34-44c8-8497-ccf34267fa13",
             "ioValues": [
                 {
@@ -101,7 +101,7 @@
                 },
                 {
                     "name": "File Type",
-                    "ioValue": "SVG",
+                    "ioValue": "STEP",
                     "currentEquation": null
                 },
                 {
@@ -116,7 +116,7 @@
                 }
             ],
             "description": "Export Atom, let's you choose a type of file to Export.",
-            "type": null,
+            "type": "STEP",
             "resolution": 96,
             "importIndex": 0,
             "partName": "PencilHolder"
@@ -1280,8 +1280,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "MainBody",
-                    "x": 0.13297872340425532,
-                    "y": 0.29918032786885246,
+                    "x": 0.12943262411347517,
+                    "y": 0.29098360655737704,
                     "uniqueID": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1533,19 +1533,19 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.05053191489361702,
-                            "y": 0.5286885245901639,
+                            "x": 0.0425531914893617,
+                            "y": 0.5163934426229508,
                             "uniqueID": "5f1bc9a9-0179-4638-95c7-ea5daf83735f",
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 12,
-                                    "currentEquation": "12"
+                                    "ioValue": 15,
+                                    "currentEquation": "15"
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 12,
-                                    "currentEquation": "12"
+                                    "ioValue": 16,
+                                    "currentEquation": "16"
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -1569,13 +1569,13 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 8,
-                                    "currentEquation": null
+                                    "ioValue": 5,
+                                    "currentEquation": "5"
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": -10,
-                                    "currentEquation": null
+                                    "ioValue": -15,
+                                    "currentEquation": "-15"
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -1594,8 +1594,8 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 10,
-                                    "currentEquation": null
+                                    "ioValue": 15,
+                                    "currentEquation": "15"
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negative."
@@ -1603,8 +1603,8 @@
                         {
                             "atomType": "Assembly",
                             "name": "Assembly",
-                            "x": 0.5797872340425532,
-                            "y": 0.46516393442622955,
+                            "x": 0.5780141843971631,
+                            "y": 0.4610655737704918,
                             "uniqueID": "959c28a7-0a1f-4d85-9dcc-26b2755c7f3d",
                             "ioValues": [
                                 {
@@ -1633,8 +1633,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.7171985815602837,
-                            "y": 0.4959016393442623,
+                            "x": 0.7163120567375887,
+                            "y": 0.48975409836065575,
                             "uniqueID": "33aed156-69ea-4701-a294-7521c231aec7",
                             "ioValues": [
                                 {
