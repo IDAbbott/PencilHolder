@@ -1260,8 +1260,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.2370500438981563,
-                            "y": 0.6611570247933884,
+                            "x": 0.24202127659574466,
+                            "y": 0.6700819672131147,
                             "uniqueID": "c18aca19-5a7c-4bca-9d03-c78333f1dc3d",
                             "ioValues": [
                                 {
@@ -1426,6 +1426,10 @@
                                 {
                                     "name": "Shape 5",
                                     "ioValue": "de24a8c7-d63c-416b-8d88-e384f8ebcdd6"
+                                },
+                                {
+                                    "name": "Shape 6",
+                                    "ioValue": "dbe1ce45-85ee-4c56-b36a-66d670164748"
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -1519,8 +1523,8 @@
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": -5,
-                                    "currentEquation": null
+                                    "ioValue": 0,
+                                    "currentEquation": "0"
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -1837,6 +1841,56 @@
                                 }
                             ],
                             "description": "Creates a new rectangle."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.12854609929078015,
+                            "y": 0.5471311475409836,
+                            "uniqueID": "207d2b21-0f89-4bca-b31c-9bbe6d6fe2c5",
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "5f1bc9a9-0179-4638-95c7-ea5daf83735f",
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0,
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 8,
+                                    "currentEquation": "8"
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": -8,
+                                    "currentEquation": "-8"
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.2127659574468085,
+                            "y": 0.5471311475409836,
+                            "uniqueID": "dbe1ce45-85ee-4c56-b36a-66d670164748",
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": "207d2b21-0f89-4bca-b31c-9bbe6d6fe2c5",
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 10,
+                                    "currentEquation": null
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negative."
                         }
                     ],
                     "allConnectors": [
@@ -1928,6 +1982,24 @@
                             "ap1Name": "geometry or number",
                             "ap2Name": "Shape 4",
                             "ap1ID": "38a8e7b9-c5e7-4873-9f1c-e7962bb35154",
+                            "ap2ID": "6e000ec4-b56d-4a3c-8ebf-c51a7dd209d2"
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap1ID": "5f1bc9a9-0179-4638-95c7-ea5daf83735f",
+                            "ap2ID": "207d2b21-0f89-4bca-b31c-9bbe6d6fe2c5"
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap1ID": "207d2b21-0f89-4bca-b31c-9bbe6d6fe2c5",
+                            "ap2ID": "dbe1ce45-85ee-4c56-b36a-66d670164748"
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 6",
+                            "ap1ID": "dbe1ce45-85ee-4c56-b36a-66d670164748",
                             "ap2ID": "6e000ec4-b56d-4a3c-8ebf-c51a7dd209d2"
                         }
                     ],
