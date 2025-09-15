@@ -90,7 +90,7 @@
         {
             "atomType": "Molecule",
             "name": "PH",
-            "x": 0.17641843971631208,
+            "x": 0.17375886524822695,
             "y": 0.20081967213114754,
             "uniqueID": 1747782793075,
             "ioValues": [],
@@ -395,8 +395,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "NegSpace",
-                    "x": 0.1311320754716981,
-                    "y": 0.592079207920792,
+                    "x": 0.12145390070921987,
+                    "y": 0.5819672131147541,
                     "uniqueID": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -588,7 +588,7 @@
                                 {
                                     "name": "diameter",
                                     "ioValue": 3.5,
-                                    "currentEquation": "3.5"
+                                    "currentEquation": null
                                 }
                             ],
                             "description": "Creates a new circle."
@@ -712,8 +712,8 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 8,
-                                    "currentEquation": null
+                                    "ioValue": 6,
+                                    "currentEquation": "6"
                                 },
                                 {
                                     "name": "zDist",
@@ -782,13 +782,13 @@
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 5.7,
-                                    "currentEquation": null
+                                    "ioValue": 7,
+                                    "currentEquation": "7"
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 3,
-                                    "currentEquation": null
+                                    "ioValue": 4,
+                                    "currentEquation": "4"
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -832,8 +832,8 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 6.5,
-                                    "currentEquation": null
+                                    "ioValue": 5.5,
+                                    "currentEquation": "5.5"
                                 },
                                 {
                                     "name": "zDist",
