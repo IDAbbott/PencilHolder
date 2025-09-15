@@ -165,8 +165,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.6320921985815603,
-                    "y": 0.5881147540983607,
+                    "x": 0.6329787234042553,
+                    "y": 0.5983606557377049,
                     "uniqueID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
                     "ioValues": [
                         {
@@ -924,8 +924,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.2473404255319149,
-                            "y": 0.42008196721311475,
+                            "x": 0.26063829787234044,
+                            "y": 0.44467213114754095,
                             "uniqueID": "4813db6b-655c-4b2f-87cd-6ec49f415efe",
                             "ioValues": [
                                 {
@@ -954,8 +954,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.35283687943262415,
-                            "y": 0.41188524590163933,
+                            "x": 0.3679078014184397,
+                            "y": 0.4323770491803279,
                             "uniqueID": "2bf5b0fd-2638-48b6-ad58-658ba30da69a",
                             "ioValues": [
                                 {
@@ -975,8 +975,8 @@
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": -13,
-                                    "currentEquation": "-13"
+                                    "ioValue": -16,
+                                    "currentEquation": "-16"
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -995,8 +995,8 @@
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 1.5,
-                                    "currentEquation": "1.5"
+                                    "ioValue": 5,
+                                    "currentEquation": "5"
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -1015,8 +1015,8 @@
                                 },
                                 {
                                     "name": "height",
-                                    "ioValue": 10,
-                                    "currentEquation": null
+                                    "ioValue": 12,
+                                    "currentEquation": "12"
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negative."
@@ -1180,8 +1180,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "MainBody",
-                    "x": 0.1264266900790167,
-                    "y": 0.32644628099173556,
+                    "x": 0.13297872340425532,
+                    "y": 0.31557377049180324,
                     "uniqueID": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
                     "ioValues": [],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1325,8 +1325,8 @@
                         {
                             "atomType": "Circle",
                             "name": "Circle",
-                            "x": 0.057067603160667245,
-                            "y": 0.5268595041322315,
+                            "x": 0.05053191489361702,
+                            "y": 0.430327868852459,
                             "uniqueID": "a9d054db-d04d-4d01-bc6e-09e7f27dd39e",
                             "ioValues": [
                                 {
@@ -1340,8 +1340,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.20456540825285338,
-                            "y": 0.5268595041322315,
+                            "x": 0.20390070921985815,
+                            "y": 0.45286885245901637,
                             "uniqueID": "ab5b1467-6c5f-4020-a437-9f91acd8c732",
                             "ioValues": [
                                 {
@@ -1817,6 +1817,26 @@
                             ],
                             "fileTypeVersion": 1,
                             "compiledBom": []
+                        },
+                        {
+                            "atomType": "Rectangle",
+                            "name": "Rectangle",
+                            "x": 0.05407801418439716,
+                            "y": 0.5409836065573771,
+                            "uniqueID": "5f1bc9a9-0179-4638-95c7-ea5daf83735f",
+                            "ioValues": [
+                                {
+                                    "name": "x length",
+                                    "ioValue": 10,
+                                    "currentEquation": null
+                                },
+                                {
+                                    "name": "y length",
+                                    "ioValue": 10,
+                                    "currentEquation": null
+                                }
+                            ],
+                            "description": "Creates a new rectangle."
                         }
                     ],
                     "allConnectors": [
