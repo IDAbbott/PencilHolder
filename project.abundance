@@ -1540,12 +1540,12 @@
                                 {
                                     "name": "x length",
                                     "ioValue": 15,
-                                    "currentEquation": "15"
+                                    "currentEquation": null
                                 },
                                 {
                                     "name": "y length",
                                     "ioValue": 16,
-                                    "currentEquation": "16"
+                                    "currentEquation": null
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -1570,12 +1570,12 @@
                                 {
                                     "name": "yDist",
                                     "ioValue": 5,
-                                    "currentEquation": "5"
+                                    "currentEquation": null
                                 },
                                 {
                                     "name": "zDist",
                                     "ioValue": -15,
-                                    "currentEquation": "-15"
+                                    "currentEquation": null
                                 }
                             ],
                             "description": "Moves a shape laterally in X, Y, Z."
@@ -1595,7 +1595,7 @@
                                 {
                                     "name": "height",
                                     "ioValue": 15,
-                                    "currentEquation": "15"
+                                    "currentEquation": null
                                 }
                             ],
                             "description": "Extrudes a 2D shape. Input can be negative."
