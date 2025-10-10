@@ -32,13 +32,13 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "PencilHolder"
+          "ioValue": "PencilLeadHolder"
         }
       ],
       "type": "STEP",
       "resolution": 96,
       "importIndex": 0,
-      "partName": "PencilHolder"
+      "partName": "PencilLeadHolder"
     },
     {
       "atomType": "Move",
@@ -222,7 +222,7 @@
               "ioValue": {
                 "geometry": [
                   {
-                    "geometry": "cut-71b085cecfa17293bb4e82433f33b870e7705f587a3418c8c604a49343caedd7",
+                    "geometry": "cut-4185d8813b568974386f33833866307d371a57b55e92aea1c4806f1a0dde4f6d",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -246,7 +246,7 @@
                     "bom": []
                   },
                   {
-                    "geometry": "cut-3480cc6964bfd0b53cd671d80b391945408b320d7a595d94686bc6664b3763ee",
+                    "geometry": "cut-2ad3ed9985d4158730fa54817b9f3148b5d431b6e8f512863a4e48e6d7a4c389",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -270,7 +270,7 @@
                     "bom": []
                   },
                   {
-                    "geometry": "cut-688b86dd583a83d0cb6506954bd86d186a2f40802f96a49230b50fb8ecd6fada",
+                    "geometry": "cut-35631194b1706fa90976b29eb8672728e0b6c9b7c5fdd68a4578af6c7e89216b",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -294,7 +294,7 @@
                     "bom": []
                   },
                   {
-                    "geometry": "cut-8697670fb92b50be71820fd2a2408a421fc3b1c55a3b004e6cba1c7028a090b7",
+                    "geometry": "cut-ab9b2e15d164180a36023cb9e23201be046b8216c99f3a0ee562af5d3aa8af4e",
                     "dimension": "3D",
                     "plane": {
                       "origin": [
@@ -318,7 +318,7 @@
                     "bom": []
                   },
                   {
-                    "geometry": "cut-e8e628ea9564165d7f9ac9e1c58c59aa4a665821d420e9a2c2ebd95df11a7260",
+                    "geometry": "cut-c6ad9feb82fca9e6558836edd62a853718f15f256ed987b3964f074de85f534b",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
