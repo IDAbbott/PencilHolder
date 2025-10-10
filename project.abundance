@@ -193,7 +193,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "move-ae679fe930b7e341f465f6c067a1a570ed8ddb0fc00c9b6b2e128b33f3a8263d",
+                "geometry": "move-011f1dc9bbfa4564e850ff06567fc0a80699cf2ef5e4f3d43618f20bc1ec8a02",
                 "tags": [],
                 "bom": [],
                 "plane": {
@@ -415,13 +415,14 @@
             {
               "atomType": "Circle",
               "name": "Circle",
-              "x": 0.15452151009657594,
-              "y": 0.7169421487603306,
+              "x": 0.15159755268524813,
+              "y": 0.7042553191489362,
               "uniqueID": "df88d9d4-c698-4941-9360-63311afea810",
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 5
+                  "ioValue": 6,
+                  "currentEquation": "6"
                 }
               ]
             },
@@ -480,13 +481,14 @@
             {
               "atomType": "Extrude",
               "name": "Extrude",
-              "x": 0.30026338893766463,
-              "y": 0.9008264462809917,
+              "x": 0.29979605710401086,
+              "y": 0.8936170212765957,
               "uniqueID": "8c765aab-b27a-49c5-882f-abf6c27a7a8a",
               "ioValues": [
                 {
                   "name": "height",
-                  "ioValue": 10
+                  "ioValue": 7,
+                  "currentEquation": "7"
                 }
               ]
             },
@@ -509,7 +511,7 @@
                 {
                   "name": "Shape 1",
                   "ioValue": {
-                    "geometry": "extrude-c230222ef518af42d036aa04dbb0208525a4737cdeeda8de3fdf52c7f0b09ec3",
+                    "geometry": "extrude-5d3cac3860f4d7d53a92bc043d925e02a58c48b498a3676cc02346adf5147c74",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -536,7 +538,7 @@
                 {
                   "name": "Shape 2",
                   "ioValue": {
-                    "geometry": "extrude-a42b22d63202a002056e728468f5b1b6d47876e0b6406786ce003ee71be220a6",
+                    "geometry": "extrude-949530a006b405605c99ca7c2226bb6890015cf28547c451c2b42afbf489f6d7",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -663,7 +665,8 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 6.2
+                  "ioValue": 6.5,
+                  "currentEquation": "6.5"
                 }
               ]
             },
@@ -759,7 +762,7 @@
                 {
                   "name": "Shape 2",
                   "ioValue": {
-                    "geometry": "extrude-bacfa17747f594ffac90ac9a13796ff3ee0f1c608f347277e3403d425a58a0ed",
+                    "geometry": "extrude-eaea602f093c597c331945d55bf84ea58fa8d9ba526fb9b7ee3b885aee2344d2",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
