@@ -1385,7 +1385,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 8
+                  "ioValue": 9.6
                 }
               ]
             },
@@ -1768,7 +1768,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 15.1
+                      "ioValue": 14.8
                     }
                   ]
                 },
@@ -1814,13 +1814,13 @@
                 },
                 {
                   "atomType": "Circle",
-                  "x": 0.09038630377524144,
-                  "y": 0.8012396694214876,
+                  "x": 0.09193408499566348,
+                  "y": 0.7995780590717299,
                   "uniqueID": "a7056b4e-9689-4c0e-89c2-bb53e2853652",
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 14.8
+                      "ioValue": 14.1
                     }
                   ]
                 },
@@ -1850,8 +1850,8 @@
                 },
                 {
                   "atomType": "Loft",
-                  "x": 0.48200175592625105,
-                  "y": 0.6487603305785123,
+                  "x": 0.4735472679965308,
+                  "y": 0.6434599156118144,
                   "uniqueID": "2378b5a0-0dad-4a86-8175-1c50a4447c35",
                   "ioValues": [
                     {
@@ -1869,7 +1869,7 @@
                     {
                       "name": "Shape 2",
                       "ioValue": {
-                        "geometry": "move-circle-7.55-0-0-0",
+                        "geometry": "move-circle-7.4-0-0-0",
                         "dimension": "2D",
                         "tags": [],
                         "plane": {
@@ -1896,7 +1896,7 @@
                     {
                       "name": "Shape 3",
                       "ioValue": {
-                        "geometry": "move-circle-7.4-0-0-0",
+                        "geometry": "move-circle-7.05-0-0-0",
                         "dimension": "2D",
                         "tags": [],
                         "plane": {
