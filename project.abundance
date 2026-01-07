@@ -814,6 +814,33 @@
                     "tags": [],
                     "bom": []
                   }
+                },
+                {
+                  "name": "Shape 12",
+                  "ioValue": {
+                    "geometry": "move-extrude-rectangle-10-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-6-4-3--6",
+                    "dimension": "3D",
+                    "plane": {
+                      "origin": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "xDir": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "normal": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "color": "#aad7f2",
+                    "tags": [],
+                    "bom": []
+                  }
                 }
               ],
               "unionType": "Fusion"
@@ -1186,7 +1213,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 20
+                  "ioValue": 0
                 }
               ]
             },
@@ -1225,8 +1252,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.2248868778280543,
-              "y": 0.911578947368421,
+              "x": 0.2239819004524887,
+              "y": 0.9073684210526316,
               "uniqueID": "id-586",
               "ioValues": [
                 {
@@ -1235,15 +1262,16 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0
+                  "ioValue": 4
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 3,
+                  "currentEquation": "3"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": -6
                 }
               ]
             }
@@ -1388,6 +1416,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-582",
               "ap2ID": "id-586"
+            },
+            {
+              "ap2Name": "Shape 12",
+              "ap1ID": "id-586",
+              "ap2ID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc"
             }
           ],
           "fileTypeVersion": 1
