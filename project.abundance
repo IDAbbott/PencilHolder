@@ -622,8 +622,8 @@
             },
             {
               "atomType": "Fusion",
-              "x": 0.6882352941176471,
-              "y": 0.4378947368421052,
+              "x": 0.6864253393665158,
+              "y": 0.4231578947368421,
               "uniqueID": "dfe85a0d-a8bd-4faf-af6b-db7483590cdc",
               "ioValues": [
                 {
@@ -710,7 +710,7 @@
                 {
                   "name": "Shape 8",
                   "ioValue": {
-                    "geometry": "move-rotate-extrude-polysides-3-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4-90-0-0-0-7.5--4",
+                    "geometry": "move-rotate-extrude-polysides-3-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2.5-90-0-10-0-6.5--4",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -818,7 +818,7 @@
                 {
                   "name": "Shape 12",
                   "ioValue": {
-                    "geometry": "move-extrude-rectangle-10-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-6-4-4--5",
+                    "geometry": "move-extrude-rectangle-10-2.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-6-4-4--7",
                     "dimension": "3D",
                     "plane": {
                       "origin": [
@@ -949,12 +949,13 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 7.5,
-                  "currentEquation": "7.5"
+                  "ioValue": 6.5,
+                  "currentEquation": "6.5"
                 },
                 {
                   "name": "zDist",
@@ -974,7 +975,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 4
+                  "ioValue": 2.5
                 }
               ]
             },
@@ -994,11 +995,12 @@
                 },
                 {
                   "name": "y-axis degrees",
-                  "ioValue": 0
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "z-axis degrees",
-                  "ioValue": 0
+                  "ioValue": 10
                 }
               ]
             },
@@ -1237,8 +1239,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.1248868778280543,
-              "y": 0.911578947368421,
+              "x": 0.16334841628959276,
+              "y": 0.9242105263157896,
               "uniqueID": "id-582",
               "ioValues": [
                 {
@@ -1253,8 +1255,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.2239819004524887,
-              "y": 0.9073684210526316,
+              "x": 0.3538461538461538,
+              "y": 0.9368421052631579,
               "uniqueID": "id-586",
               "ioValues": [
                 {
@@ -1273,7 +1275,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -5
+                  "ioValue": -7
                 }
               ]
             }
