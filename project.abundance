@@ -710,7 +710,7 @@
                 {
                   "name": "Shape 8",
                   "ioValue": {
-                    "geometry": "move-rotate-extrude-polysides-3-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2.5-90-30-0-0-5.5--4",
+                    "geometry": "move-rotate-extrude-polysides-3-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3.5-90-30-0-0-6.5--4",
                     "dimension": "3D",
                     "tags": [],
                     "plane": {
@@ -939,8 +939,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5957446808510638,
-              "y": 0.20081967213114754,
+              "x": 0.5959276018099547,
+              "y": 0.19157894736842104,
               "uniqueID": "2a648d04-c295-40c4-82ec-65225658300c",
               "ioValues": [
                 {
@@ -954,7 +954,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 5.5
+                  "ioValue": 6.5
                 },
                 {
                   "name": "zDist",
@@ -964,8 +964,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.283710407239819,
-              "y": 0.16842105263157894,
+              "x": 0.28778280542986423,
+              "y": 0.16210526315789475,
               "uniqueID": "8ef27b35-7926-44ff-8276-51bda8b920ba",
               "ioValues": [
                 {
@@ -974,7 +974,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 2.5
+                  "ioValue": 3.5
                 }
               ]
             },
@@ -1215,7 +1215,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 20
                 }
               ]
             },
