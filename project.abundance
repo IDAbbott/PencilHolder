@@ -1735,8 +1735,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 8.8,
-                  "currentEquation": "8.8"
+                  "ioValue": 8.8
                 },
                 {
                   "name": "zDist",
@@ -1780,8 +1779,7 @@
                 },
                 {
                   "name": "x-axis degrees",
-                  "ioValue": 90,
-                  "currentEquation": "90"
+                  "ioValue": 90
                 },
                 {
                   "name": "y-axis degrees",
