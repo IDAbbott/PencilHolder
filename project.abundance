@@ -255,8 +255,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.2635,
-              "y": 0.6234,
+              "x": 0.2618,
+              "y": 0.617,
               "uniqueID": "id-3099",
               "ioValues": [
                 {
@@ -265,7 +265,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 35
+                  "ioValue": 15
                 }
               ]
             },
@@ -368,7 +368,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 5
                 }
               ]
             },
@@ -393,7 +393,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 5
                 }
               ]
             }
@@ -1631,12 +1631,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 6
+                  "ioValue": 5,
+                  "currentEquation": "5"
                 },
                 {
                   "name": "y length",
-                  "ioValue": 25,
-                  "currentEquation": "25"
+                  "ioValue": 15
                 }
               ]
             },
@@ -1668,8 +1668,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 5,
-                  "currentEquation": "5"
+                  "ioValue": 6
                 },
                 {
                   "name": "yDist",
@@ -1694,12 +1693,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 5,
-                  "currentEquation": "5"
+                  "ioValue": 6
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -4
+                  "ioValue": -4,
+                  "currentEquation": "-4"
                 },
                 {
                   "name": "zDist",
