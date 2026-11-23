@@ -1488,8 +1488,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.3894,
-              "y": 0.6688,
+              "x": 0.3636,
+              "y": 0.6064,
               "uniqueID": "0e63decc-41e6-4d85-a5f4-b9ef2967cb79",
               "ioValues": [
                 {
@@ -1530,11 +1530,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 5
+                  "ioValue": 8
                 },
                 {
                   "name": "zDist",
@@ -1858,14 +1859,14 @@
                 },
                 {
                   "name": "y length",
-                  "ioValue": 20
+                  "ioValue": 16
                 }
               ]
             },
             {
               "atomType": "Assembly",
-              "x": 0.578,
-              "y": 0.4611,
+              "x": 0.5791,
+              "y": 0.4574,
               "uniqueID": "959c28a7-0a1f-4d85-9dcc-26b2755c7f3d",
               "ioValues": [
                 {
@@ -1894,10 +1895,6 @@
                 },
                 {
                   "name": "Shape 8",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape9",
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
@@ -2080,11 +2077,6 @@
             }
           ],
           "allConnectors": [
-            {
-              "ap2Name": "Shape 3",
-              "ap1ID": "0a2cb4d1-3f23-4952-a5dc-3597320a41ac",
-              "ap2ID": "959c28a7-0a1f-4d85-9dcc-26b2755c7f3d"
-            },
             {
               "ap2Name": "Shape 7",
               "ap1ID": "0e63decc-41e6-4d85-a5f4-b9ef2967cb79",
