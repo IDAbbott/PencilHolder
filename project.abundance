@@ -2129,7 +2129,7 @@
           "x": 0.2917,
           "y": 0.1553,
           "uniqueID": "id-3003",
-          "name": "Molecule",
+          "name": "Lock",
           "topLevel": false,
           "allAtoms": [
             {
@@ -2245,8 +2245,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.213,
-              "y": 0.8,
+              "x": 0.2917,
+              "y": 0.7255,
               "uniqueID": "id-3025",
               "ioValues": [
                 {
@@ -2270,8 +2270,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.3884,
-              "y": 0.8043,
+              "x": 0.1925,
+              "y": 0.7851,
               "uniqueID": "id-3026",
               "ioValues": [
                 {
@@ -2346,6 +2346,10 @@
                 {
                   "name": "Shape4",
                   "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape5",
+                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
             },
@@ -2389,7 +2393,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 30
+                  "ioValue": 15
                 }
               ]
             },
@@ -2442,6 +2446,31 @@
                   "ioValue": 8
                 }
               ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.2891,
+              "y": 0.8128,
+              "uniqueID": "id-3084",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": -10
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": -10
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -2473,17 +2502,22 @@
             {
               "ap2Name": "geometry",
               "ap1ID": "id-3024",
-              "ap2ID": "id-3025"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-3025",
               "ap2ID": "id-3026"
             },
             {
               "ap2Name": "Shape2",
-              "ap1ID": "id-3026",
+              "ap1ID": "id-3025",
               "ap2ID": "id-3054"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3026",
+              "ap2ID": "id-3025"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3026",
+              "ap2ID": "id-3084"
             },
             {
               "ap2Name": "Shape 1",
@@ -2521,12 +2555,51 @@
               "ap2ID": "id-3077"
             },
             {
-              "ap2Name": "Shape3",
+              "ap2Name": "Shape4",
               "ap1ID": "id-3077",
+              "ap2ID": "id-3054"
+            },
+            {
+              "ap2Name": "Shape3",
+              "ap1ID": "id-3084",
               "ap2ID": "id-3054"
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Export",
+          "x": 0.5406,
+          "y": 0.2787,
+          "uniqueID": "id-3091",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STEP",
+              "currentEquation": "STEP"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "STL Tolerance",
+              "ioValue": 0.05
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "PH_Lock",
+              "currentEquation": "PH_Lock"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "PH_Lock"
         }
       ],
       "allConnectors": [
@@ -2564,6 +2637,11 @@
           "ap2Name": "Shape 2",
           "ap1ID": "fb91a9f9-522f-473b-92ff-ffc772591be9",
           "ap2ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3003",
+          "ap2ID": "id-3091"
         }
       ],
       "fileTypeVersion": 1
