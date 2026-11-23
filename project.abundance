@@ -1030,12 +1030,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": -3.8
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 8
+                  "ioValue": 8,
+                  "currentEquation": "8"
                 },
                 {
                   "name": "zDist",
@@ -1354,12 +1354,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 20,
-                  "currentEquation": "20"
+                  "ioValue": 25
                 },
                 {
                   "name": "y length",
-                  "ioValue": 16
+                  "ioValue": 16,
+                  "currentEquation": "16"
                 }
               ]
             },
@@ -2139,8 +2139,8 @@
         },
         {
           "atomType": "Export",
-          "x": 0.5406,
-          "y": 0.2787,
+          "x": 0.5689,
+          "y": 0.0894,
           "uniqueID": "id-3091",
           "ioValues": [
             {
@@ -2170,6 +2170,23 @@
           "resolution": 96,
           "importIndex": 0,
           "partName": "PH_Lock"
+        },
+        {
+          "atomType": "Fusion",
+          "x": 0.6707,
+          "y": 0.3255,
+          "uniqueID": "id-3148",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "unionType": "Fusion"
         }
       ],
       "allConnectors": [
@@ -2187,6 +2204,11 @@
           "ap2Name": "geometry",
           "ap1ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
           "ap2ID": "32853c36-4f30-457e-82cf-0dd52aa69393"
+        },
+        {
+          "ap2Name": "Shape2",
+          "ap1ID": "62262740-e9fa-4d17-9cdf-4dd2c3a139ee",
+          "ap2ID": "id-3148"
         },
         {
           "ap2Name": "geometry",
@@ -2212,6 +2234,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-3003",
           "ap2ID": "id-3091"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-3003",
+          "ap2ID": "id-3148"
         }
       ],
       "fileTypeVersion": 1
