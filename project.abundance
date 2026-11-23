@@ -2868,40 +2868,6 @@
       "partName": "PencilLeadHolder"
     },
     {
-      "atomType": "Export",
-      "x": 0.3488,
-      "y": 0.4754,
-      "uniqueID": "7ae2514b-bc34-44c8-8497-ccf34267fa13",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "File Type",
-          "ioValue": "STEP",
-          "currentEquation": "STL"
-        },
-        {
-          "name": "Resolution (dpi)",
-          "ioValue": 96
-        },
-        {
-          "name": "STL Tolerance",
-          "ioValue": 0.05
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "PencilHolder",
-          "currentEquation": "PencilHolder"
-        }
-      ],
-      "type": "STEP",
-      "resolution": 96,
-      "importIndex": 0,
-      "partName": "PencilHolder"
-    },
-    {
       "atomType": "Difference",
       "x": 0.3516,
       "y": 0.7357,
@@ -2989,11 +2955,6 @@
       "ap2Name": "geometry",
       "ap1ID": 1747782793075,
       "ap2ID": "04493a2b-a51b-4f1d-b1e4-50c9b6d759f6"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": 1747782793075,
-      "ap2ID": "7ae2514b-bc34-44c8-8497-ccf34267fa13"
     },
     {
       "ap2Name": "retain",
