@@ -2,7 +2,7 @@
 
 # PencilHolder
 
-![](/project.svg)
+![](/project.png)
 
 
 
