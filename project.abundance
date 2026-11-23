@@ -2656,8 +2656,8 @@
         },
         {
           "atomType": "Intersection",
-          "x": 0.4192,
-          "y": 0.4979,
+          "x": 0.4867,
+          "y": 0.5277,
           "uniqueID": "id-4187",
           "ioValues": [
             {
@@ -2743,6 +2743,40 @@
           "resolution": 96,
           "importIndex": 0,
           "partName": "Plugs"
+        },
+        {
+          "atomType": "Export",
+          "x": 0.6305,
+          "y": 0.5702,
+          "uniqueID": "id-4660",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STEP",
+              "currentEquation": "STEP"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "STL Tolerance",
+              "ioValue": 0.05
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "PH_Main",
+              "currentEquation": "PH_Main"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "PH_Main"
         }
       ],
       "allConnectors": [
@@ -2845,6 +2879,11 @@
           "ap2Name": "Shape2",
           "ap1ID": "id-4187",
           "ap2ID": "id-3724"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4187",
+          "ap2ID": "id-4660"
         },
         {
           "ap2Name": "geometry",
