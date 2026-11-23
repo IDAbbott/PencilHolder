@@ -334,12 +334,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 15
+                  "ioValue": 15,
+                  "currentEquation": "15"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 8,
-                  "currentEquation": "8"
+                  "ioValue": 12
                 }
               ]
             },
@@ -1696,8 +1696,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2917,
-          "y": 0.1553,
+          "x": 0.2926,
+          "y": 0.1489,
           "uniqueID": "id-3003",
           "name": "Lock",
           "topLevel": false,
@@ -1753,7 +1753,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 5
                 }
               ]
             },
@@ -2013,7 +2013,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 8
+                  "ioValue": 12
                 }
               ]
             },
@@ -2187,6 +2187,19 @@
             }
           ],
           "unionType": "Fusion"
+        },
+        {
+          "atomType": "Color",
+          "x": 0.3516,
+          "y": 0.2553,
+          "uniqueID": "id-3154",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "selectedColor": "Glass"
         }
       ],
       "allConnectors": [
@@ -2236,8 +2249,13 @@
           "ap2ID": "id-3091"
         },
         {
-          "ap2Name": "Shape 1",
+          "ap2Name": "geometry",
           "ap1ID": "id-3003",
+          "ap2ID": "id-3154"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-3154",
           "ap2ID": "id-3148"
         }
       ],
