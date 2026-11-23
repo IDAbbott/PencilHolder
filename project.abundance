@@ -1952,12 +1952,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 10
+                  "ioValue": 10,
+                  "currentEquation": "10"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -7,
-                  "currentEquation": "-7"
+                  "ioValue": -6
                 },
                 {
                   "name": "zDist",
@@ -2097,11 +2097,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -6
+                  "ioValue": -6,
+                  "currentEquation": "-6"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 1
                 },
                 {
                   "name": "zDist",
@@ -2126,7 +2127,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -12
+                  "ioValue": -10
                 },
                 {
                   "name": "zDist",
@@ -2142,7 +2143,7 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 9
+                  "ioValue": 10
                 },
                 {
                   "name": "y length",
@@ -2179,11 +2180,11 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 11
+                  "ioValue": 10
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -8
+                  "ioValue": -7
                 },
                 {
                   "name": "zDist",
@@ -2193,8 +2194,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4551,
-              "y": 0.8681,
+              "x": 0.4585,
+              "y": 0.8702,
               "uniqueID": "id-3216",
               "ioValues": [
                 {
@@ -2203,11 +2204,11 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 11
+                  "ioValue": 10
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -8
+                  "ioValue": -7
                 },
                 {
                   "name": "zDist",
