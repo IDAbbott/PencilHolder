@@ -106,7 +106,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 35
+                  "ioValue": 40
                 }
               ]
             },
@@ -130,14 +130,14 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 20
+                  "ioValue": 25
                 }
               ]
             },
             {
               "atomType": "Circle",
-              "x": 0.1865,
-              "y": 0.3596,
+              "x": 0.1925,
+              "y": 0.317,
               "uniqueID": "3ce9be18-1efc-4aed-996c-1369606bd713",
               "ioValues": [
                 {
@@ -182,7 +182,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 55
+                  "ioValue": 60
                 }
               ]
             },
@@ -331,7 +331,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -10
+                  "ioValue": -6
                 },
                 {
                   "name": "yDist",
@@ -339,7 +339,8 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 12
+                  "ioValue": 13,
+                  "currentEquation": "13"
                 }
               ]
             },
@@ -380,11 +381,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 8
+                  "ioValue": 11
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -7
+                  "ioValue": -7,
+                  "currentEquation": "-7"
                 },
                 {
                   "name": "zDist",
