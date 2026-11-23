@@ -2210,7 +2210,7 @@
                 },
                 {
                   "name": "y length",
-                  "ioValue": 20
+                  "ioValue": 15
                 }
               ]
             },
@@ -2242,15 +2242,15 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 7
+                  "ioValue": 11
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -10
+                  "ioValue": -4
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 5
+                  "ioValue": -15
                 }
               ]
             },
@@ -2266,15 +2266,15 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 7
+                  "ioValue": 11
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -10
+                  "ioValue": -4
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 15
+                  "ioValue": -5
                 }
               ]
             },
