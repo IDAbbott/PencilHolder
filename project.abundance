@@ -2152,11 +2152,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 20
+                  "ioValue": 25
                 },
                 {
                   "name": "y length",
-                  "ioValue": 16
+                  "ioValue": 16,
+                  "currentEquation": "16"
                 }
               ]
             },
@@ -2172,8 +2173,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": -3,
+                  "currentEquation": "-3"
                 },
                 {
                   "name": "yDist",
@@ -2238,7 +2239,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 3.5
+                  "ioValue": 4
                 }
               ]
             },
@@ -2429,7 +2430,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -8
+                  "ioValue": -10
                 },
                 {
                   "name": "yDist",
@@ -2453,11 +2454,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-3008",
               "ap2ID": "id-3009"
-            },
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-3009",
-              "ap2ID": "id-3005"
             },
             {
               "ap2Name": "retain",
@@ -2503,6 +2499,11 @@
               "ap2Name": "remove",
               "ap1ID": "id-3054",
               "ap2ID": "id-3060"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-3060",
+              "ap2ID": "id-3005"
             },
             {
               "ap2Name": "geometry",
