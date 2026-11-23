@@ -1354,7 +1354,8 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 25
+                  "ioValue": 25,
+                  "currentEquation": "25"
                 },
                 {
                   "name": "y length",
@@ -1572,6 +1573,22 @@
                 {
                   "name": "height",
                   "ioValue": 18
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.0419,
+              "y": 0.9574,
+              "uniqueID": "id-3157",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
                 }
               ]
             }
