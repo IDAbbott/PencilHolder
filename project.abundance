@@ -2030,8 +2030,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.1848,
-              "y": 0.2213,
+              "x": 0.1814,
+              "y": 0.217,
               "uniqueID": "id-3008",
               "ioValues": [
                 {
@@ -2131,7 +2131,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 5
                 }
               ]
             },
@@ -2342,8 +2342,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": 5
                 }
               ]
             },
@@ -2717,7 +2716,7 @@
         {
           "atomType": "Fusion",
           "x": 0.6707,
-          "y": 0.3255,
+          "y": 0.3128,
           "uniqueID": "id-3148",
           "ioValues": [
             {
@@ -2733,8 +2732,8 @@
         },
         {
           "atomType": "Color",
-          "x": 0.3516,
-          "y": 0.2553,
+          "x": 0.3533,
+          "y": 0.2404,
           "uniqueID": "id-3154",
           "ioValues": [
             {
@@ -2743,6 +2742,31 @@
             }
           ],
           "selectedColor": "Glass"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.4508,
+          "y": 0.2383,
+          "uniqueID": "id-3269",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "yDist",
+              "ioValue": -20
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -2750,11 +2774,6 @@
           "ap2Name": "remove",
           "ap1ID": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
           "ap2ID": "a07487b4-48e9-4875-aac0-bef353879de0"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "32853c36-4f30-457e-82cf-0dd52aa69393",
-          "ap2ID": 1747782793738
         },
         {
           "ap2Name": "geometry",
@@ -2797,8 +2816,18 @@
           "ap2ID": "id-3154"
         },
         {
-          "ap2Name": "Shape 1",
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-3148",
+          "ap2ID": 1747782793738
+        },
+        {
+          "ap2Name": "geometry",
           "ap1ID": "id-3154",
+          "ap2ID": "id-3269"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-3269",
           "ap2ID": "id-3148"
         }
       ],
