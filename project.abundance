@@ -623,30 +623,6 @@
           "fileTypeVersion": 1
         },
         {
-          "atomType": "Move",
-          "x": 0.7844,
-          "y": 0.6149,
-          "uniqueID": "32853c36-4f30-457e-82cf-0dd52aa69393",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0
-            },
-            {
-              "name": "zDist",
-              "ioValue": 0
-            }
-          ]
-        },
-        {
           "atomType": "Molecule",
           "x": 0.1457,
           "y": 0.845,
@@ -2739,6 +2715,40 @@
               "ioValue": 0
             }
           ]
+        },
+        {
+          "atomType": "Export",
+          "x": 0.5526,
+          "y": 0.8043,
+          "uniqueID": "id-4202",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STEP",
+              "currentEquation": "STEP"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "STL Tolerance",
+              "ioValue": 0.05
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Plugs",
+              "currentEquation": "Plugs"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "Plugs"
         }
       ],
       "allConnectors": [
@@ -2761,6 +2771,11 @@
           "ap2Name": "retain",
           "ap1ID": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
           "ap2ID": "a07487b4-48e9-4875-aac0-bef353879de0"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "fb91a9f9-522f-473b-92ff-ffc772591be9",
+          "ap2ID": "id-4202"
         },
         {
           "ap2Name": "geometry",
