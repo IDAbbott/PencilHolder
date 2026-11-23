@@ -276,7 +276,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -20
+                  "ioValue": 0
                 }
               ]
             },
@@ -463,55 +463,6 @@
                   "ioValue": -7
                 }
               ]
-            },
-            {
-              "atomType": "Fusion",
-              "x": 0.6674,
-              "y": 0.3853,
-              "uniqueID": "id-1195",
-              "ioValues": [
-                {
-                  "name": "Shape 1",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 2",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 3",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 4",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 5",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 7",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 8",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 9",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 10",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape 11",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "unionType": "Fusion"
             },
             {
               "atomType": "Rectangle",
@@ -715,6 +666,23 @@
               ]
             },
             {
+              "atomType": "Fusion",
+              "x": 0.6518,
+              "y": 0.7191,
+              "uniqueID": "id-2997",
+              "ioValues": [
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "unionType": "Fusion"
+            },
+            {
               "atomType": "Rectangle",
               "x": 0.0249,
               "y": 0.9116,
@@ -788,19 +756,9 @@
               "ap2ID": "2a648d04-c295-40c4-82ec-65225658300c"
             },
             {
-              "ap2Name": "Shape 1",
-              "ap1ID": "2a648d04-c295-40c4-82ec-65225658300c",
-              "ap2ID": "id-1195"
-            },
-            {
-              "ap2Name": "Shape 3",
-              "ap1ID": "2bf5b0fd-2638-48b6-ad58-658ba30da69a",
-              "ap2ID": "id-1195"
-            },
-            {
-              "ap2Name": "Shape 5",
+              "ap2Name": "Shape2",
               "ap1ID": "2e35378d-c43f-412a-a947-e6e34faeebfe",
-              "ap2ID": "id-1195"
+              "ap2ID": "id-2997"
             },
             {
               "ap2Name": "geometry",
@@ -813,14 +771,9 @@
               "ap2ID": "7e816567-daa0-4f89-aa6e-11075ca564b0"
             },
             {
-              "ap2Name": "Shape 8",
-              "ap1ID": "4c89a0ef-9cab-40a1-ad32-e118740db5fb",
-              "ap2ID": "id-1195"
-            },
-            {
-              "ap2Name": "Shape 4",
+              "ap2Name": "Shape 1",
               "ap1ID": "5298c527-0387-47a5-8f3a-0ef072955452",
-              "ap2ID": "id-1195"
+              "ap2ID": "id-2997"
             },
             {
               "ap2Name": "geometry",
@@ -878,16 +831,6 @@
               "ap2ID": "f80cd803-147d-4662-be79-614f802aff73"
             },
             {
-              "ap2Name": "Shape 2",
-              "ap1ID": "f80cd803-147d-4662-be79-614f802aff73",
-              "ap2ID": "id-1195"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-1195",
-              "ap2ID": "035cff58-f461-4431-9f71-49af726a1363"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-1583",
               "ap2ID": "id-1587"
@@ -903,21 +846,6 @@
               "ap2ID": "2bf5b0fd-2638-48b6-ad58-658ba30da69a"
             },
             {
-              "ap2Name": "Shape 9",
-              "ap1ID": "id-1920",
-              "ap2ID": "id-1195"
-            },
-            {
-              "ap2Name": "Shape 10",
-              "ap1ID": "id-1927",
-              "ap2ID": "id-1195"
-            },
-            {
-              "ap2Name": "Shape 11",
-              "ap1ID": "id-1934",
-              "ap2ID": "id-1195"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-2279",
               "ap2ID": "id-1934"
@@ -926,6 +854,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-2629",
               "ap2ID": "id-1920"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-2997",
+              "ap2ID": "035cff58-f461-4431-9f71-49af726a1363"
             },
             {
               "ap2Name": "geometry",
@@ -941,11 +874,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-582",
               "ap2ID": "id-586"
-            },
-            {
-              "ap2Name": "Shape 7",
-              "ap1ID": "id-586",
-              "ap2ID": "id-1195"
             }
           ],
           "fileTypeVersion": 1
