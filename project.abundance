@@ -243,20 +243,20 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.0967,
-              "y": 0.6043,
+              "x": 0.0924,
+              "y": 0.5638,
               "uniqueID": "id-3097",
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 4
+                  "ioValue": 3.5
                 }
               ]
             },
             {
               "atomType": "Extrude",
-              "x": 0.2618,
-              "y": 0.617,
+              "x": 0.1634,
+              "y": 0.5064,
               "uniqueID": "id-3099",
               "ioValues": [
                 {
@@ -271,8 +271,8 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.0932,
-              "y": 0.7468,
+              "x": 0.089,
+              "y": 0.8745,
               "uniqueID": "id-3101",
               "ioValues": [
                 {
@@ -283,8 +283,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.195,
-              "y": 0.7489,
+              "x": 0.1908,
+              "y": 0.8787,
               "uniqueID": "id-3102",
               "ioValues": [
                 {
@@ -299,8 +299,8 @@
             },
             {
               "atomType": "Rotate",
-              "x": 0.3003,
-              "y": 0.7447,
+              "x": 0.3122,
+              "y": 0.8617,
               "uniqueID": "id-3103",
               "ioValues": [
                 {
@@ -374,8 +374,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.3635,
-              "y": 0.6234,
+              "x": 0.4132,
+              "y": 0.6191,
               "uniqueID": "id-3179",
               "ioValues": [
                 {
@@ -394,6 +394,88 @@
                 {
                   "name": "zDist",
                   "ioValue": 5
+                }
+              ]
+            },
+            {
+              "atomType": "RegularPolygon",
+              "x": 0.0727,
+              "y": 0.6745,
+              "uniqueID": "id-3186",
+              "ioValues": [
+                {
+                  "name": "number of sides",
+                  "ioValue": 6,
+                  "currentEquation": "6"
+                },
+                {
+                  "name": "diameter",
+                  "ioValue": 6
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.1497,
+              "y": 0.6851,
+              "uniqueID": "id-3190",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 3
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.2241,
+              "y": 0.6,
+              "uniqueID": "id-3194",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.2267,
+              "y": 0.7426,
+              "uniqueID": "id-3200",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
                 }
               ]
             }
@@ -446,16 +528,6 @@
             },
             {
               "ap2Name": "geometry",
-              "ap1ID": "id-3099",
-              "ap2ID": "id-3105"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-3099",
-              "ap2ID": "id-3179"
-            },
-            {
-              "ap2Name": "geometry",
               "ap1ID": "id-3101",
               "ap2ID": "id-3102"
             },
@@ -483,6 +555,31 @@
               "ap2Name": "Shape3",
               "ap1ID": "id-3179",
               "ap2ID": "id-2997"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3186",
+              "ap2ID": "id-3190"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3190",
+              "ap2ID": "id-3105"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3190",
+              "ap2ID": "id-3179"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3190",
+              "ap2ID": "id-3194"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3190",
+              "ap2ID": "id-3200"
             }
           ],
           "fileTypeVersion": 1
