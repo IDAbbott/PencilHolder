@@ -355,11 +355,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -10
+                  "ioValue": -6
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 10
+                  "ioValue": 10,
+                  "currentEquation": "10"
                 },
                 {
                   "name": "zDist",
@@ -379,7 +380,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 6
+                  "ioValue": 8
                 },
                 {
                   "name": "yDist",
@@ -419,7 +420,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 3
+                  "ioValue": 2
                 }
               ]
             },
@@ -439,11 +440,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 12
+                  "ioValue": 13
                 }
               ]
             },
@@ -1160,7 +1162,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 3
+                  "ioValue": 2
                 },
                 {
                   "name": "yDist",
@@ -1684,7 +1686,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 15
+                  "ioValue": 11
                 },
                 {
                   "name": "yDist",
@@ -1708,7 +1710,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 15
+                  "ioValue": 11
                 },
                 {
                   "name": "yDist",
