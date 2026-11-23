@@ -2164,7 +2164,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 5
+                  "ioValue": 6
                 }
               ]
             },
@@ -2184,11 +2184,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -7
+                  "ioValue": -7,
+                  "currentEquation": "-7"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -15
+                  "ioValue": -15.6
                 }
               ]
             },
@@ -2208,11 +2209,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -7
+                  "ioValue": -7,
+                  "currentEquation": "-7"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -5
+                  "ioValue": -5.2
                 }
               ]
             },
