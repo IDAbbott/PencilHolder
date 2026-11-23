@@ -1922,11 +1922,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 10
+                  "ioValue": 10,
+                  "currentEquation": "10"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -6
+                  "ioValue": -3
                 },
                 {
                   "name": "zDist",
@@ -2090,11 +2091,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -6
+                  "ioValue": -6,
+                  "currentEquation": "-6"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -10
+                  "ioValue": -8
                 },
                 {
                   "name": "zDist",
@@ -2472,7 +2474,8 @@
             },
             {
               "name": "xDist",
-              "ioValue": 0
+              "ioValue": 0,
+              "currentEquation": "0"
             },
             {
               "name": "yDist",
@@ -2712,6 +2715,30 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.4106,
+          "y": 0.3085,
+          "uniqueID": "id-4196",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": -20
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -2734,11 +2761,6 @@
           "ap2Name": "retain",
           "ap1ID": "f9fbaf8e-8ec6-44fd-8703-ac967d3c439b",
           "ap2ID": "a07487b4-48e9-4875-aac0-bef353879de0"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-3003",
-          "ap2ID": "id-3091"
         },
         {
           "ap2Name": "geometry",
@@ -2806,9 +2828,9 @@
           "ap2ID": "id-4187"
         },
         {
-          "ap2Name": "geometry2",
+          "ap2Name": "geometry",
           "ap1ID": "id-4181",
-          "ap2ID": "id-4192"
+          "ap2ID": "id-4196"
         },
         {
           "ap2Name": "Shape2",
@@ -2816,9 +2838,19 @@
           "ap2ID": "id-3724"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4192",
+          "ap2ID": "id-3091"
+        },
+        {
           "ap2Name": "Shape 1",
           "ap1ID": "id-4192",
           "ap2ID": "id-3724"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-4196",
+          "ap2ID": "id-4192"
         }
       ],
       "fileTypeVersion": 1
