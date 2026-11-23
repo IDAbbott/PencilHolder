@@ -355,8 +355,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -6,
-                  "currentEquation": "-6"
+                  "ioValue": -6
                 },
                 {
                   "name": "yDist",
@@ -384,13 +383,11 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -3,
-                  "currentEquation": "-3"
+                  "ioValue": -3
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 5,
-                  "currentEquation": "5"
+                  "ioValue": 5
                 }
               ]
             },
@@ -402,11 +399,12 @@
               "ioValues": [
                 {
                   "name": "number of sides",
-                  "ioValue": 6
+                  "ioValue": 6,
+                  "currentEquation": "6"
                 },
                 {
                   "name": "diameter",
-                  "ioValue": 6
+                  "ioValue": 7
                 }
               ]
             },
@@ -446,7 +444,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 13
+                  "ioValue": 14
                 }
               ]
             },
@@ -466,11 +464,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": -1
                 }
               ]
             },
@@ -1898,8 +1897,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 10,
-                  "currentEquation": "10"
+                  "ioValue": 10
                 },
                 {
                   "name": "yDist",
@@ -2067,8 +2065,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -6,
-                  "currentEquation": "-6"
+                  "ioValue": -6
                 },
                 {
                   "name": "yDist",
@@ -2168,11 +2165,12 @@
               "ioValues": [
                 {
                   "name": "number of sides",
-                  "ioValue": 6
+                  "ioValue": 6,
+                  "currentEquation": "6"
                 },
                 {
                   "name": "diameter",
-                  "ioValue": 6
+                  "ioValue": 7
                 }
               ]
             },
@@ -2212,7 +2210,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 12
+                  "ioValue": 14
                 }
               ]
             },
@@ -2236,7 +2234,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": -1
                 }
               ]
             },
@@ -2450,8 +2448,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "yDist",
@@ -2523,13 +2520,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "yDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "zDist",
@@ -2553,8 +2548,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "zDist",
