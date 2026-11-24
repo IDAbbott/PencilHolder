@@ -491,8 +491,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 3,
-                  "currentEquation": "3"
+                  "ioValue": 3
                 },
                 {
                   "name": "zDist",
@@ -1303,7 +1302,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 14.3
+                      "ioValue": 14.5
                     }
                   ]
                 },
@@ -1333,8 +1332,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.3011,
-                  "y": 0.6256,
+                  "x": 0.2395,
+                  "y": 0.6213,
                   "uniqueID": "fa03a86d-1ded-4d43-9941-f082a72c7615",
                   "ioValues": [
                     {
@@ -1397,8 +1396,8 @@
                 },
                 {
                   "atomType": "Loft",
-                  "x": 0.2729,
-                  "y": 0.3979,
+                  "x": 0.3618,
+                  "y": 0.4043,
                   "uniqueID": "id-4680",
                   "ioValues": [
                     {
@@ -1435,40 +1434,6 @@
                     }
                   ],
                   "closedSelection": 0
-                },
-                {
-                  "atomType": "Export",
-                  "x": 0.6724,
-                  "y": 0.8085,
-                  "uniqueID": "id-5433",
-                  "ioValues": [
-                    {
-                      "name": "geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "File Type",
-                      "ioValue": "STEP",
-                      "currentEquation": "STEP"
-                    },
-                    {
-                      "name": "Resolution (dpi)",
-                      "ioValue": 96
-                    },
-                    {
-                      "name": "STL Tolerance",
-                      "ioValue": 0.05
-                    },
-                    {
-                      "name": "Part Name",
-                      "ioValue": "UpperBody",
-                      "currentEquation": "UpperBody"
-                    }
-                  ],
-                  "type": null,
-                  "resolution": 96,
-                  "importIndex": 0,
-                  "partName": "UpperBody"
                 }
               ],
               "allConnectors": [
@@ -1496,11 +1461,6 @@
                   "ap2Name": "number or geometry",
                   "ap1ID": "7c58d01b-4543-4c86-b5b3-9ca35d366d5c",
                   "ap2ID": "a92ebd56-b5f2-4b1f-8d1b-78cbb807a584"
-                },
-                {
-                  "ap2Name": "geometry",
-                  "ap1ID": "7c58d01b-4543-4c86-b5b3-9ca35d366d5c",
-                  "ap2ID": "id-5433"
                 },
                 {
                   "ap2Name": "geometry",
@@ -1959,8 +1919,7 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 20,
-                  "currentEquation": "20"
+                  "ioValue": 20
                 },
                 {
                   "name": "y length",
@@ -2501,8 +2460,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -55,
-                  "currentEquation": "-55"
+                  "ioValue": -55
                 },
                 {
                   "name": "zDist",
