@@ -1911,8 +1911,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.379,
-              "y": 0.9872,
+              "x": 0.3841,
+              "y": 0.9191,
               "uniqueID": "id-4693",
               "ioValues": [
                 {
@@ -2129,7 +2129,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 20
+                  "ioValue": 25
                 }
               ]
             },
