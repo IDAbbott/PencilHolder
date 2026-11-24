@@ -212,8 +212,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5415,
-              "y": 0.6362,
+              "x": 0.491,
+              "y": 0.4936,
               "uniqueID": "id-3179",
               "ioValues": [
                 {
@@ -264,7 +264,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 2
+                  "ioValue": 20
                 }
               ]
             },
@@ -285,19 +285,19 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -5
+                  "ioValue": -10,
+                  "currentEquation": "-10"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 6.5,
-                  "currentEquation": "6.5"
+                  "ioValue": 9
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.2462,
-              "y": 0.934,
+              "x": 0.2378,
+              "y": 0.9234,
               "uniqueID": "id-5391",
               "ioValues": [
                 {
@@ -306,12 +306,11 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -10
+                  "ioValue": 0
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 3,
-                  "currentEquation": "3"
+                  "ioValue": -10
                 },
                 {
                   "name": "zDist",
@@ -321,8 +320,8 @@
             },
             {
               "atomType": "GitHubMolecule",
-              "x": 0.2224,
-              "y": 0.5787,
+              "x": 0.1292,
+              "y": 0.5064,
               "uniqueID": "id-6194",
               "name": "torus",
               "ioValues": [
@@ -535,13 +534,21 @@
                 {
                   "name": "Shape4",
                   "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape5",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape6",
+                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
             },
             {
               "atomType": "GitHubMolecule",
-              "x": 0.3841,
-              "y": 0.5809,
+              "x": 0.2703,
+              "y": 0.5106,
               "uniqueID": "id-6239",
               "name": "ScaleCentered",
               "ioValues": [
@@ -685,27 +692,28 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 40
+                  "ioValue": 40,
+                  "currentEquation": "40"
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10
+                  "ioValue": 20
                 }
               ]
             },
             {
               "atomType": "Rectangle",
-              "x": 0.0556,
-              "y": 0.9489,
+              "x": 0.0624,
+              "y": 0.9532,
               "uniqueID": "id-6319",
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 10
+                  "ioValue": 10.4
                 },
                 {
                   "name": "y length",
-                  "ioValue": 10
+                  "ioValue": 20
                 }
               ]
             }
@@ -760,6 +768,16 @@
               "ap2Name": "geometry",
               "ap1ID": "id-5381",
               "ap2ID": "id-5391"
+            },
+            {
+              "ap2Name": "Shape4",
+              "ap1ID": "id-5385",
+              "ap2ID": "id-6225"
+            },
+            {
+              "ap2Name": "Shape5",
+              "ap1ID": "id-5391",
+              "ap2ID": "id-6225"
             },
             {
               "ap2Name": "shape",
