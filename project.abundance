@@ -375,6 +375,197 @@
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.2224,
+              "y": 0.5787,
+              "uniqueID": "id-6194",
+              "name": "torus",
+              "ioValues": [
+                {
+                  "name": "minor radius",
+                  "ioValue": 2,
+                  "currentEquation": "2"
+                },
+                {
+                  "name": "major radius",
+                  "ioValue": 1
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-6195",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.6102,
+                  "y": 0.4814,
+                  "uniqueID": "id-6196",
+                  "ioValues": [
+                    {
+                      "name": "circleShape",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "majorRadius",
+                      "ioValue": 1
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "\n      const Inputs = [\n       {inputName: \"circleShape\", type: \"geometry\", defaultValue: null},\n      {inputName: \"majorRadius\", type: \"number\", defaultValue: 10},\n      ]\n\n       let createdRectangle = library[circleShape]\n      const newPlane = new replicad.Plane().pivot(0, 'Y')\n    //Use the built-in Move function to move the shape in the X direction\n      let movedShape = await Move(createdRectangle, majorRadius, 0, 0)\n\n       const torus =  movedShape.geometry[0].sketchOnPlane(\"XZ\").revolve();\n \n      //Wrap the raw replicad geometry in our assembly format\n      let shape2 = {\n          geometry: [torus],\n          dimension: \"3D\",\n          tags: [\"createdShape\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      return shape2"
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.1583,
+                  "y": 0.3012,
+                  "uniqueID": "id-6197",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 2
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.2992,
+                  "y": 0.3727,
+                  "uniqueID": "id-6198",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 90
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.4263,
+                  "y": 0.3075,
+                  "uniqueID": "id-6199",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 15
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.1,
+                  "uniqueID": "id-6200",
+                  "name": "minor radius",
+                  "type": "number",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.16,
+                  "uniqueID": "id-6201",
+                  "name": "major radius",
+                  "type": "number",
+                  "options": []
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-6196",
+                  "ap2ID": "id-6195"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-6197",
+                  "ap2ID": "id-6198"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-6198",
+                  "ap2ID": "id-6199"
+                },
+                {
+                  "ap2Name": "circleShape",
+                  "ap1ID": "id-6199",
+                  "ap2ID": "id-6196"
+                },
+                {
+                  "ap2Name": "diameter",
+                  "ap1ID": "id-6200",
+                  "ap2ID": "id-6197"
+                },
+                {
+                  "ap2Name": "majorRadius",
+                  "ap1ID": "id-6201",
+                  "ap2ID": "id-6196"
+                }
+              ],
+              "parentRepo": {
+                "contentURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.abundance?sanitize=true",
+                "dateCreated": "2025-10-06T19:53:02Z",
+                "dateModified": "2025-10-06T20:38:18Z",
+                "description": "TORUS ",
+                "forks": 0,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/alzatin/torus",
+                "lastFoundGit": "2026-11-24T18:23:38.963Z",
+                "likes": 0,
+                "owner": "alzatin",
+                "pngURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.png?sanitize=true",
+                "privateRepo": false,
+                "pullRequests": [],
+                "ranking": 1,
+                "readme": "https://raw.githubusercontent.com/alzatin/torus/master/README.md?sanitize=true",
+                "searchField": "torus alzatin torus  ",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.svg?sanitize=true",
+                "topMoleculeID": "",
+                "topics": [],
+                "userRanking": 0,
+                "userSetAsThumbnail": false,
+                "yyyy": 2025,
+                "repoName": "torus",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "scaleToProjectUnits": true,
+              "lastReloadedFromGithubAt": 1795557179817
             }
           ],
           "allConnectors": [
@@ -3041,83 +3232,195 @@
           ]
         },
         {
-          "atomType": "Code",
-          "x": 0.7002,
-          "y": 0.8316,
-          "uniqueID": "id-6144",
+          "atomType": "GitHubMolecule",
+          "x": 0.6518,
+          "y": 0.8426,
+          "uniqueID": "id-6170",
+          "name": "torus",
           "ioValues": [
             {
-              "name": "width",
-              "ioValue": 40
+              "name": "minor radius",
+              "ioValue": 2,
+              "currentEquation": "2"
             },
             {
-              "name": "depth",
-              "ioValue": 30
-            },
-            {
-              "name": "thickness",
-              "ioValue": 5
-            },
-            {
-              "name": "holeRadius",
-              "ioValue": 6
-            },
-            {
-              "name": "color",
-              "ioValue": "#5B9BD5",
-              "currentEquation": "#5B9BD5"
-            },
-            {
-              "name": "addFillet",
-              "ioValue": false
-            },
-            {
-              "name": "extra",
-              "ioValue": "__GEOMETRY_INPUT__"
+              "name": "major radius",
+              "ioValue": 22
             }
           ],
-          "interpreterVersion": 0,
-          "code": "function run(\r\n  overallDiameter = 22,\r\n  crossSectionDiameter = 2,\r\n  color = \"#5B9BD5\"\r\n) {\r\n  const tubeRadius = crossSectionDiameter / 2; // 1 mm\r\n  const majorRadius = overallDiameter / 2 - tubeRadius; // 10 mm\r\n\r\n  // Create a circle offset from the Z axis\r\n  const profile = replicad\r\n    .drawCircle(tubeRadius)\r\n    .translate(majorRadius, 0);\r\n\r\n  // Revolve around the Z axis to create a torus\r\n  const torus = profile\r\n    .sketchOnPlane()\r\n    .revolve();\r\n\r\n  return [\r\n    new Assembly({\r\n      geometry: torus,\r\n      color,\r\n      tags: [\"torus\", \"o-ring\"],\r\n      bom: [\r\n        `O-ring OD ${overallDiameter} mm, cross-section ${crossSectionDiameter} mm`\r\n      ]\r\n    })\r\n  ];\r\n}"
-        },
-        {
-          "atomType": "Code",
-          "x": 0.7923,
-          "y": 0.7916,
-          "uniqueID": "id-6153",
-          "ioValues": [
+          "topLevel": false,
+          "allAtoms": [
             {
-              "name": "width",
-              "ioValue": 40
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-6163",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
             },
             {
-              "name": "depth",
-              "ioValue": 30
+              "atomType": "Code",
+              "x": 0.6102,
+              "y": 0.4814,
+              "uniqueID": "id-6164",
+              "ioValues": [
+                {
+                  "name": "circleShape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "majorRadius",
+                  "ioValue": 22
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": "\n      const Inputs = [\n       {inputName: \"circleShape\", type: \"geometry\", defaultValue: null},\n      {inputName: \"majorRadius\", type: \"number\", defaultValue: 10},\n      ]\n\n       let createdRectangle = library[circleShape]\n      const newPlane = new replicad.Plane().pivot(0, 'Y')\n    //Use the built-in Move function to move the shape in the X direction\n      let movedShape = await Move(createdRectangle, majorRadius, 0, 0)\n\n       const torus =  movedShape.geometry[0].sketchOnPlane(\"XZ\").revolve();\n \n      //Wrap the raw replicad geometry in our assembly format\n      let shape2 = {\n          geometry: [torus],\n          dimension: \"3D\",\n          tags: [\"createdShape\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      return shape2"
             },
             {
-              "name": "thickness",
-              "ioValue": 5
+              "atomType": "Circle",
+              "x": 0.1583,
+              "y": 0.3012,
+              "uniqueID": "id-6165",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 2
+                }
+              ]
             },
             {
-              "name": "holeRadius",
-              "ioValue": 6
+              "atomType": "Rotate",
+              "x": 0.2992,
+              "y": 0.3727,
+              "uniqueID": "id-6166",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 90
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 0
+                }
+              ]
             },
             {
-              "name": "color",
-              "ioValue": "#5B9BD5",
-              "currentEquation": "#5B9BD5"
+              "atomType": "Move",
+              "x": 0.4263,
+              "y": 0.3075,
+              "uniqueID": "id-6167",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 15
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
             },
             {
-              "name": "addFillet",
-              "ioValue": true
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.1,
+              "uniqueID": "id-6168",
+              "name": "minor radius",
+              "type": "number",
+              "options": []
             },
             {
-              "name": "extra",
-              "ioValue": "__GEOMETRY_INPUT__"
+              "atomType": "Input",
+              "x": 0.0165,
+              "y": 0.16,
+              "uniqueID": "id-6169",
+              "name": "major radius",
+              "type": "number",
+              "options": []
             }
           ],
-          "interpreterVersion": 1,
-          "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  width: number = 40,        \n  depth: number = 30,       \n  thickness: number = 5,    \n  holeRadius: number = 6,   \n  color: string = \"#5B9BD5\", \n  addFillet: boolean = true, \n  extra?: Assembly           \n) {\n  // ── Step 1: Create the base solid ────────────────────────────────────────\n  // makeBaseBox(width, depth, height) places a box with one corner at the\n  // origin.  Translate it so the hole will be centred at (0, 0).\n  let plate = replicad\n    .makeBaseBox(width, depth, thickness)\n    .translate(-width / 2, -depth / 2, 0);\n\n  // ── Step 2: Cut a through-hole in the centre ──────────────────────────────\n  // Extrude a circle slightly taller than the plate so the cut goes all the\n  // way through.  Start 1 mm below the bottom face to avoid coplanar issues.\n  const holeCutter = replicad\n    .drawCircle(holeRadius)\n    .sketchOnPlane()\n    .extrude(thickness + 2)\n    .translate(0, 0, -1);\n\n  plate = plate.cut(holeCutter);\n\n  // ── Step 3: Optional fillet on the top-face edges ────────────────────────\n  // inPlane(\"XY\", thickness) selects only the edges that lie in the\n  // horizontal plane at z = thickness (i.e. the top face of the plate).\n  if (addFillet) {\n    plate = plate.fillet(1.5, (e) => e.inPlane(\"XY\", thickness));\n  }\n\n  // ── Step 4: Wrap in an Assembly to set display properties ─────────────────\n  const plateAssembly = new Assembly({\n    geometry: plate,\n    color: color,\n    tags: [\"plate\", \"mounting-plate\"],\n    bom: [`Mounting plate ${width}×${depth}×${thickness} mm`],\n  });\n\n  // ── Step 5: Combine with any upstream geometry ────────────────────────────\n  // Returning an array lets each piece stay independent for the BOM and\n  // cut-layout atoms.  If nothing is connected, `extra` is undefined.\n  const results: Assembly[] = [plateAssembly];\n  if (extra) results.push(extra);\n  return results;\n}\n",
-          "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(width = 40, depth = 30, thickness = 5, holeRadius = 6, color = \"#5B9BD5\", addFillet = true, extra) {\n    // ── Step 1: Create the base solid ────────────────────────────────────────\n    // makeBaseBox(width, depth, height) places a box with one corner at the\n    // origin.  Translate it so the hole will be centred at (0, 0).\n    let plate = replicad\n        .makeBaseBox(width, depth, thickness)\n        .translate(-width / 2, -depth / 2, 0);\n    // ── Step 2: Cut a through-hole in the centre ──────────────────────────────\n    // Extrude a circle slightly taller than the plate so the cut goes all the\n    // way through.  Start 1 mm below the bottom face to avoid coplanar issues.\n    const holeCutter = replicad\n        .drawCircle(holeRadius)\n        .sketchOnPlane()\n        .extrude(thickness + 2)\n        .translate(0, 0, -1);\n    plate = plate.cut(holeCutter);\n    // ── Step 3: Optional fillet on the top-face edges ────────────────────────\n    // inPlane(\"XY\", thickness) selects only the edges that lie in the\n    // horizontal plane at z = thickness (i.e. the top face of the plate).\n    if (addFillet) {\n        plate = plate.fillet(1.5, (e) => e.inPlane(\"XY\", thickness));\n    }\n    // ── Step 4: Wrap in an Assembly to set display properties ─────────────────\n    const plateAssembly = new Assembly({\n        geometry: plate,\n        color: color,\n        tags: [\"plate\", \"mounting-plate\"],\n        bom: [`Mounting plate ${width}×${depth}×${thickness} mm`],\n    });\n    // ── Step 5: Combine with any upstream geometry ────────────────────────────\n    // Returning an array lets each piece stay independent for the BOM and\n    // cut-layout atoms.  If nothing is connected, `extra` is undefined.\n    const results = [plateAssembly];\n    if (extra)\n        results.push(extra);\n    return results;\n}\n"
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-6164",
+              "ap2ID": "id-6163"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6165",
+              "ap2ID": "id-6166"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6166",
+              "ap2ID": "id-6167"
+            },
+            {
+              "ap2Name": "circleShape",
+              "ap1ID": "id-6167",
+              "ap2ID": "id-6164"
+            },
+            {
+              "ap2Name": "diameter",
+              "ap1ID": "id-6168",
+              "ap2ID": "id-6165"
+            },
+            {
+              "ap2Name": "majorRadius",
+              "ap1ID": "id-6169",
+              "ap2ID": "id-6164"
+            }
+          ],
+          "parentRepo": {
+            "contentURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.abundance?sanitize=true",
+            "dateCreated": "2025-10-06T19:53:02Z",
+            "dateModified": "2025-10-06T20:38:18Z",
+            "description": "TORUS ",
+            "forks": 0,
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/alzatin/torus",
+            "lastFoundGit": "2026-11-24T18:23:38.963Z",
+            "likes": 0,
+            "owner": "alzatin",
+            "pngURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.png?sanitize=true",
+            "privateRepo": false,
+            "pullRequests": [],
+            "ranking": 1,
+            "readme": "https://raw.githubusercontent.com/alzatin/torus/master/README.md?sanitize=true",
+            "searchField": "torus alzatin torus  ",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.svg?sanitize=true",
+            "topMoleculeID": "",
+            "topics": [],
+            "userRanking": 0,
+            "userSetAsThumbnail": false,
+            "yyyy": 2025,
+            "repoName": "torus",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "scaleToProjectUnits": true,
+          "lastReloadedFromGithubAt": 1795557179817
         }
       ],
       "allConnectors": [
@@ -3265,11 +3568,6 @@
           "ap2Name": "geometry",
           "ap1ID": "id-6128",
           "ap2ID": "id-6134"
-        },
-        {
-          "ap2Name": "extra",
-          "ap1ID": "id-6134",
-          "ap2ID": "id-6153"
         },
         {
           "ap2Name": "geometry",
