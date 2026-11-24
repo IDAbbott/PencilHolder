@@ -2253,7 +2253,7 @@
                 },
                 {
                   "name": "diameter",
-                  "ioValue": 7
+                  "ioValue": 7.5
                 }
               ]
             },
