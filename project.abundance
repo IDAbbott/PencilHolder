@@ -64,8 +64,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.0915,
-          "y": 0.766,
+          "x": 0.089,
+          "y": 0.7532,
           "uniqueID": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
           "name": "NegSpace",
           "topLevel": false,
@@ -589,7 +589,7 @@
                 },
                 {
                   "name": "factor",
-                  "ioValue": 0.8
+                  "ioValue": 0.7
                 },
                 {
                   "name": "center",
@@ -622,7 +622,7 @@
                     },
                     {
                       "name": "factor",
-                      "ioValue": 0.8
+                      "ioValue": 0.7
                     },
                     {
                       "name": "center",
@@ -3336,7 +3336,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 30
+              "ioValue": 25
             }
           ]
         },
@@ -3348,7 +3348,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 24.5
+              "ioValue": 20
             }
           ]
         },
@@ -3501,7 +3501,7 @@
         {
           "atomType": "Intersection",
           "x": 0.4919,
-          "y": 0.517,
+          "y": 0.5149,
           "uniqueID": "id-4187",
           "ioValues": [
             {
