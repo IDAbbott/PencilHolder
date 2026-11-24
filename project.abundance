@@ -2054,7 +2054,7 @@
             {
               "atomType": "Difference",
               "x": 0.6784,
-              "y": 0.5362,
+              "y": 0.5319,
               "uniqueID": "id-3060",
               "ioValues": [
                 {
@@ -2658,7 +2658,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 100
+                  "ioValue": 110
                 }
               ]
             },
@@ -2694,101 +2694,27 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -50,
-                  "currentEquation": "-50"
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": -15
-                }
-              ]
-            },
-            {
-              "atomType": "Rectangle",
-              "x": 0.0744,
-              "y": 0.3702,
-              "uniqueID": "id-4796",
-              "ioValues": [
-                {
-                  "name": "x length",
-                  "ioValue": 100,
-                  "currentEquation": "100"
-                },
-                {
-                  "name": "y length",
-                  "ioValue": 100
-                }
-              ]
-            },
-            {
-              "atomType": "Extrude",
-              "x": 0.1788,
-              "y": 0.4128,
-              "uniqueID": "id-4800",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "height",
-                  "ioValue": 15
-                }
-              ]
-            },
-            {
-              "atomType": "Move",
-              "x": 0.2583,
-              "y": 0.4191,
-              "uniqueID": "id-4804",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 55,
-                  "currentEquation": "55"
-                },
-                {
-                  "name": "yDist",
                   "ioValue": -55
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -15
+                  "ioValue": -15,
+                  "currentEquation": "-15"
                 }
               ]
             },
             {
-              "atomType": "Difference",
-              "x": 0.343,
-              "y": 0.4128,
-              "uniqueID": "id-4810",
+              "atomType": "Intersection",
+              "x": 0.4525,
+              "y": 0.3362,
+              "uniqueID": "id-4818",
               "ioValues": [
                 {
-                  "name": "retain",
+                  "name": "geometry1",
                   "ioValue": "__GEOMETRY_INPUT__"
                 },
                 {
-                  "name": "remove",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Difference",
-              "x": 0.432,
-              "y": 0.3128,
-              "uniqueID": "id-4814",
-              "ioValues": [
-                {
-                  "name": "retain",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "remove",
+                  "name": "geometry2",
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
@@ -3006,9 +2932,9 @@
               "ap2ID": "id-4742"
             },
             {
-              "ap2Name": "remove",
+              "ap2Name": "geometry1",
               "ap1ID": "id-4773",
-              "ap2ID": "id-4814"
+              "ap2ID": "id-4818"
             },
             {
               "ap2Name": "geometry",
@@ -3021,33 +2947,13 @@
               "ap2ID": "id-4786"
             },
             {
-              "ap2Name": "retain",
+              "ap2Name": "geometry2",
               "ap1ID": "id-4786",
-              "ap2ID": "id-4810"
+              "ap2ID": "id-4818"
             },
             {
               "ap2Name": "retain",
-              "ap1ID": "id-4786",
-              "ap2ID": "id-4814"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-4796",
-              "ap2ID": "id-4800"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-4800",
-              "ap2ID": "id-4804"
-            },
-            {
-              "ap2Name": "remove",
-              "ap1ID": "id-4804",
-              "ap2ID": "id-4810"
-            },
-            {
-              "ap2Name": "retain",
-              "ap1ID": "id-4814",
+              "ap1ID": "id-4818",
               "ap2ID": "id-3060"
             }
           ],
