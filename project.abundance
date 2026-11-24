@@ -227,11 +227,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 11.5
+                  "ioValue": 12
                 }
               ]
             },
@@ -365,13 +366,12 @@
               "ioValues": [
                 {
                   "name": "minor radius",
-                  "ioValue": 2,
-                  "currentEquation": "2"
+                  "ioValue": 4,
+                  "currentEquation": "4"
                 },
                 {
                   "name": "major radius",
-                  "ioValue": 0.2,
-                  "currentEquation": "0.2"
+                  "ioValue": 1
                 }
               ],
               "topLevel": false,
@@ -400,7 +400,7 @@
                     },
                     {
                       "name": "majorRadius",
-                      "ioValue": 0.2
+                      "ioValue": 1
                     }
                   ],
                   "interpreterVersion": 0,
@@ -414,7 +414,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 2
+                      "ioValue": 4
                     }
                   ]
                 },
@@ -575,6 +575,145 @@
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.3841,
+              "y": 0.5809,
+              "uniqueID": "id-6239",
+              "name": "ScaleCentered",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "factor",
+                  "ioValue": 0.8
+                },
+                {
+                  "name": "center",
+                  "ioValue": []
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-6234",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.5716,
+                  "y": 0.6029,
+                  "uniqueID": "id-6235",
+                  "ioValues": [
+                    {
+                      "name": "shape",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "factor",
+                      "ioValue": 0.8
+                    },
+                    {
+                      "name": "center",
+                      "ioValue": []
+                    }
+                  ],
+                  "interpreterVersion": 1,
+                  "code": "function run(shape: Assembly, factor: number, center: number[]) {\n  return shape.onLeafs((leaf) => {\n    let centerAsPoint: replicad.Point | undefined = undefined\n    if (leaf.is2D() && center.length == 2 || (!leaf.is2D() && center.length == 3)) {\n      centerAsPoint = center as replicad.Point;\n    } else {\n      centerAsPoint = leaf.geometry.boundingBox.center;\n    }\n    if (leaf.geometry instanceof replicad.Drawing) {\n      leaf.geometry = leaf.geometry.scale(factor, centerAsPoint as [number, number])\n    } else {\n      leaf.geometry = replicad.cast(replicad.scale(leaf.geometry.wrapped, centerAsPoint, factor))\n    }\n    return leaf;\n  })\n}",
+                  "compiledCode": "\"use strict\";\nfunction run(shape, factor, center) {\n    return shape.onLeafs((leaf) => {\n        let centerAsPoint = undefined;\n        if (leaf.is2D() && center.length == 2 || (!leaf.is2D() && center.length == 3)) {\n            centerAsPoint = center;\n        }\n        else {\n            centerAsPoint = leaf.geometry.boundingBox.center;\n        }\n        if (leaf.geometry instanceof replicad.Drawing) {\n            leaf.geometry = leaf.geometry.scale(factor, centerAsPoint);\n        }\n        else {\n            leaf.geometry = replicad.cast(replicad.scale(leaf.geometry.wrapped, centerAsPoint, factor));\n        }\n        return leaf;\n    });\n}\n"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.1,
+                  "uniqueID": "id-6236",
+                  "name": "shape",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.16,
+                  "uniqueID": "id-6237",
+                  "name": "factor",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.22,
+                  "uniqueID": "id-6238",
+                  "name": "center",
+                  "type": "array",
+                  "options": []
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-6235",
+                  "ap2ID": "id-6234"
+                },
+                {
+                  "ap2Name": "shape",
+                  "ap1ID": "id-6236",
+                  "ap2ID": "id-6235"
+                },
+                {
+                  "ap2Name": "factor",
+                  "ap1ID": "id-6237",
+                  "ap2ID": "id-6235"
+                },
+                {
+                  "ap2Name": "center",
+                  "ap1ID": "id-6238",
+                  "ap2ID": "id-6235"
+                }
+              ],
+              "parentRepo": {
+                "contentURL": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/project.abundance?sanitize=true",
+                "dateCreated": "2026-08-18T16:38:59Z",
+                "dateModified": "2026-08-18T18:03:43Z",
+                "description": "Scale a shape by the given factor. Defaults to scale from center of the input shape.",
+                "forks": 0,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/tristan-huber/ScaleCentered",
+                "lastFoundGit": "2026-11-24T18:23:38.963Z",
+                "likes": 0,
+                "owner": "tristan-huber",
+                "pngURL": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/project.png?sanitize=true",
+                "privateRepo": false,
+                "pullRequests": [],
+                "ranking": 2,
+                "readme": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/README.md?sanitize=true",
+                "searchField": "scalecentered tristan-huber scale a shape by the given factor. defaults to scale from center of the input shape. abundance-tool",
+                "svgURL": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/project.svg?sanitize=true",
+                "topMoleculeID": "",
+                "topics": [
+                  "abundance-tool"
+                ],
+                "userRanking": 0,
+                "userSetAsThumbnail": false,
+                "yyyy": 2026,
+                "repoName": "ScaleCentered",
+                "isLocal": false
+              },
+              "unitsKey": "Unitless",
+              "fileTypeVersion": 1,
+              "scaleToProjectUnits": true,
+              "lastReloadedFromGithubAt": 1795557685720
             }
           ],
           "allConnectors": [
@@ -649,14 +788,19 @@
               "ap2ID": "id-5397"
             },
             {
-              "ap2Name": "geometry",
+              "ap2Name": "shape",
               "ap1ID": "id-6194",
-              "ap2ID": "id-3179"
+              "ap2ID": "id-6239"
             },
             {
               "ap2Name": "geometry",
               "ap1ID": "id-6225",
               "ap2ID": "035cff58-f461-4431-9f71-49af726a1363"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6239",
+              "ap2ID": "id-3179"
             }
           ],
           "fileTypeVersion": 1
@@ -1652,8 +1796,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.2741,
-              "y": 0.8755,
+              "x": 0.2866,
+              "y": 0.8234,
               "uniqueID": "id-288",
               "ioValues": [
                 {
