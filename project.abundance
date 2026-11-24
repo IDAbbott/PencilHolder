@@ -1874,8 +1874,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2079,
-          "y": 0.1383,
+          "x": 0.0573,
+          "y": 0.1681,
           "uniqueID": "id-3003",
           "name": "Lock",
           "topLevel": false,
@@ -2644,7 +2644,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": -1
             },
             {
               "name": "zDist",
@@ -2654,8 +2654,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6612,
-          "y": 0.3043,
+          "x": 0.6595,
+          "y": 0.3021,
           "uniqueID": "id-3724",
           "ioValues": [
             {
@@ -2864,8 +2864,8 @@
         },
         {
           "atomType": "Intersection",
-          "x": 0.5201,
-          "y": 0.2681,
+          "x": 0.521,
+          "y": 0.2702,
           "uniqueID": "id-4192",
           "ioValues": [
             {
@@ -2894,7 +2894,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": -1
             },
             {
               "name": "zDist",
@@ -2976,7 +2976,32 @@
           "y": 0.2085,
           "uniqueID": "id-4708",
           "name": "PositionLock",
-          "value": 0
+          "value": -1
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.2669,
+          "y": 0.0851,
+          "uniqueID": "id-4710",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 5
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -3008,7 +3033,7 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-3003",
-          "ap2ID": "id-3154"
+          "ap2ID": "id-4710"
         },
         {
           "ap2Name": "geometry",
@@ -3109,6 +3134,11 @@
           "ap2Name": "yDist",
           "ap1ID": "id-4708",
           "ap2ID": "id-4196"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4710",
+          "ap2ID": "id-3154"
         }
       ],
       "fileTypeVersion": 1
