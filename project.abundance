@@ -64,8 +64,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.1027,
-          "y": 0.7766,
+          "x": 0.0992,
+          "y": 0.7745,
           "uniqueID": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
           "name": "NegSpace",
           "topLevel": false,
@@ -404,7 +404,7 @@
                 },
                 {
                   "name": "diameter",
-                  "ioValue": 7
+                  "ioValue": 7.5
                 }
               ]
             },
