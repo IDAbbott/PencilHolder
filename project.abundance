@@ -1303,7 +1303,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 14.1
+                      "ioValue": 14.3
                     }
                   ]
                 },
@@ -1435,6 +1435,40 @@
                     }
                   ],
                   "closedSelection": 0
+                },
+                {
+                  "atomType": "Export",
+                  "x": 0.6724,
+                  "y": 0.8085,
+                  "uniqueID": "id-5433",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "File Type",
+                      "ioValue": "STEP",
+                      "currentEquation": "STEP"
+                    },
+                    {
+                      "name": "Resolution (dpi)",
+                      "ioValue": 96
+                    },
+                    {
+                      "name": "STL Tolerance",
+                      "ioValue": 0.05
+                    },
+                    {
+                      "name": "Part Name",
+                      "ioValue": "UpperBody",
+                      "currentEquation": "UpperBody"
+                    }
+                  ],
+                  "type": null,
+                  "resolution": 96,
+                  "importIndex": 0,
+                  "partName": "UpperBody"
                 }
               ],
               "allConnectors": [
@@ -1462,6 +1496,11 @@
                   "ap2Name": "number or geometry",
                   "ap1ID": "7c58d01b-4543-4c86-b5b3-9ca35d366d5c",
                   "ap2ID": "a92ebd56-b5f2-4b1f-8d1b-78cbb807a584"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "7c58d01b-4543-4c86-b5b3-9ca35d366d5c",
+                  "ap2ID": "id-5433"
                 },
                 {
                   "ap2Name": "geometry",
