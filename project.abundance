@@ -1900,12 +1900,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 25,
-                  "currentEquation": "25"
+                  "ioValue": 20
                 },
                 {
                   "name": "y length",
-                  "ioValue": 16
+                  "ioValue": 15,
+                  "currentEquation": "15"
                 }
               ]
             },
@@ -1921,15 +1921,17 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 2
+                  "ioValue": 0
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -7
+                  "ioValue": -7,
+                  "currentEquation": "-7"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -14.5
+                  "ioValue": -14.5,
+                  "currentEquation": "-14.5"
                 }
               ]
             },
@@ -2514,7 +2516,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 6
+                  "ioValue": 6.2
                 }
               ]
             },
@@ -2659,11 +2661,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-3008",
               "ap2ID": "id-3009"
-            },
-            {
-              "ap2Name": "retain",
-              "ap1ID": "id-3009",
-              "ap2ID": "id-3060"
             },
             {
               "ap2Name": "Shape2",
@@ -2864,6 +2861,11 @@
               "ap2Name": "remove",
               "ap1ID": "id-4766",
               "ap2ID": "id-4742"
+            },
+            {
+              "ap2Name": "retain",
+              "ap1ID": "id-4773",
+              "ap2ID": "id-3060"
             }
           ],
           "fileTypeVersion": 1
