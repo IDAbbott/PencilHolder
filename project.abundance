@@ -2506,7 +2506,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 6.5
+                  "ioValue": 7.5
                 }
               ]
             },
@@ -2528,8 +2528,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.7237,
-              "y": 0.0745,
+              "x": 0.7254,
+              "y": 0.1149,
               "uniqueID": "id-4742",
               "ioValues": [
                 {
@@ -2539,6 +2539,64 @@
                 {
                   "name": "remove",
                   "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.6031,
+              "y": 0.2915,
+              "uniqueID": "id-4746",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.7031,
+              "y": 0.2915,
+              "uniqueID": "id-4750",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 15
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.8007,
+              "y": 0.2787,
+              "uniqueID": "id-4754",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 9
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": -5,
+                  "currentEquation": "-5"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
                 }
               ]
             }
@@ -2718,6 +2776,16 @@
               "ap2Name": "geometry",
               "ap1ID": "id-4731",
               "ap2ID": "id-4729"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4746",
+              "ap2ID": "id-4750"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4750",
+              "ap2ID": "id-4754"
             }
           ],
           "fileTypeVersion": 1
