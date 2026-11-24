@@ -1133,11 +1133,12 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 2
+                  "ioValue": 0
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 8
+                  "ioValue": 8,
+                  "currentEquation": "8"
                 },
                 {
                   "name": "zDist",
@@ -1519,11 +1520,12 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 25
+                  "ioValue": 40
                 },
                 {
                   "name": "y length",
-                  "ioValue": 16
+                  "ioValue": 16,
+                  "currentEquation": "16"
                 }
               ]
             },
