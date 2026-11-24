@@ -399,8 +399,7 @@
               "ioValues": [
                 {
                   "name": "number of sides",
-                  "ioValue": 6,
-                  "currentEquation": "6"
+                  "ioValue": 6
                 },
                 {
                   "name": "diameter",
@@ -464,8 +463,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": 0
                 },
                 {
                   "name": "zDist",
@@ -1904,8 +1902,7 @@
                 },
                 {
                   "name": "y length",
-                  "ioValue": 15,
-                  "currentEquation": "15"
+                  "ioValue": 15
                 }
               ]
             },
@@ -1925,13 +1922,11 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -7,
-                  "currentEquation": "-7"
+                  "ioValue": -7
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -14.5,
-                  "currentEquation": "-14.5"
+                  "ioValue": -14.5
                 }
               ]
             },
@@ -2255,8 +2250,7 @@
               "ioValues": [
                 {
                   "name": "number of sides",
-                  "ioValue": 6,
-                  "currentEquation": "6"
+                  "ioValue": 6
                 },
                 {
                   "name": "diameter",
@@ -2361,8 +2355,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 10,
-                  "currentEquation": "10"
+                  "ioValue": 10
                 },
                 {
                   "name": "yDist",
@@ -2386,13 +2379,11 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -9,
-                  "currentEquation": "-9"
+                  "ioValue": -9
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 8,
-                  "currentEquation": "8"
+                  "ioValue": 8
                 },
                 {
                   "name": "zDist",
@@ -2600,13 +2591,11 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -5,
-                  "currentEquation": "-5"
+                  "ioValue": -5
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": 0
                 }
               ]
             },
@@ -2698,8 +2687,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -15,
-                  "currentEquation": "-15"
+                  "ioValue": -15
                 }
               ]
             },
@@ -3372,8 +3360,7 @@
             },
             {
               "name": "y-axis degrees",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "z-axis degrees",
