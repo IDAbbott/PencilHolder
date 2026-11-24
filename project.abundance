@@ -2023,8 +2023,8 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.5749,
-              "y": 0.6702,
+              "x": 0.5706,
+              "y": 0.666,
               "uniqueID": "id-3054",
               "ioValues": [
                 {
@@ -2115,8 +2115,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4294,
-              "y": 0.8128,
+              "x": 0.426,
+              "y": 0.8,
               "uniqueID": "id-3215",
               "ioValues": [
                 {
@@ -2545,8 +2545,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.2814,
-              "y": 0.6745,
+              "x": 0.2678,
+              "y": 0.666,
               "uniqueID": "id-5406",
               "ioValues": [
                 {
@@ -2555,12 +2555,13 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0
+                  "ioValue": 10,
+                  "currentEquation": "o"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": -7,
+                  "currentEquation": "o"
                 },
                 {
                   "name": "zDist",
@@ -2580,12 +2581,13 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 0
+                  "ioValue": 10,
+                  "currentEquation": "o"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0,
-                  "currentEquation": "0"
+                  "ioValue": -7,
+                  "currentEquation": "o"
                 },
                 {
                   "name": "zDist",
@@ -2595,8 +2597,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.4149,
-              "y": 0.6149,
+              "x": 0.3533,
+              "y": 0.6319,
               "uniqueID": "id-5408",
               "ioValues": [
                 {
@@ -2888,7 +2890,7 @@
         {
           "atomType": "Assembly",
           "x": 0.6553,
-          "y": 0.3,
+          "y": 0.2957,
           "uniqueID": "id-3724",
           "ioValues": [
             {
