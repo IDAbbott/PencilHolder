@@ -1952,6 +1952,10 @@
                 {
                   "name": "Shape7",
                   "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape8",
+                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
             },
@@ -2041,6 +2045,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-282",
               "ap2ID": "id-288"
+            },
+            {
+              "ap2Name": "Shape7",
+              "ap1ID": "id-288",
+              "ap2ID": "id-5999"
             },
             {
               "ap2Name": "geometry",
@@ -2615,22 +2624,6 @@
               ]
             },
             {
-              "atomType": "Difference",
-              "x": 0.4457,
-              "y": 0.4681,
-              "uniqueID": "id-5408",
-              "ioValues": [
-                {
-                  "name": "retain",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "remove",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
               "atomType": "Assembly",
               "x": 0.3533,
               "y": 0.717,
@@ -2714,6 +2707,361 @@
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.4217,
+              "y": 0.5766,
+              "uniqueID": "id-6255",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": -7.3
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.065,
+              "y": 0.5809,
+              "uniqueID": "id-6256",
+              "name": "torus",
+              "ioValues": [
+                {
+                  "name": "minor radius",
+                  "ioValue": 4
+                },
+                {
+                  "name": "major radius",
+                  "ioValue": 1
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-6257",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.6102,
+                  "y": 0.4814,
+                  "uniqueID": "id-6258",
+                  "ioValues": [
+                    {
+                      "name": "circleShape",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "majorRadius",
+                      "ioValue": 1
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "\n      const Inputs = [\n       {inputName: \"circleShape\", type: \"geometry\", defaultValue: null},\n      {inputName: \"majorRadius\", type: \"number\", defaultValue: 10},\n      ]\n\n       let createdRectangle = library[circleShape]\n      const newPlane = new replicad.Plane().pivot(0, 'Y')\n    //Use the built-in Move function to move the shape in the X direction\n      let movedShape = await Move(createdRectangle, majorRadius, 0, 0)\n\n       const torus =  movedShape.geometry[0].sketchOnPlane(\"XZ\").revolve();\n \n      //Wrap the raw replicad geometry in our assembly format\n      let shape2 = {\n          geometry: [torus],\n          dimension: \"3D\",\n          tags: [\"createdShape\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      return shape2"
+                },
+                {
+                  "atomType": "Circle",
+                  "x": 0.1583,
+                  "y": 0.3012,
+                  "uniqueID": "id-6259",
+                  "ioValues": [
+                    {
+                      "name": "diameter",
+                      "ioValue": 4
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rotate",
+                  "x": 0.2992,
+                  "y": 0.3727,
+                  "uniqueID": "id-6260",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "x-axis degrees",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "y-axis degrees",
+                      "ioValue": 90
+                    },
+                    {
+                      "name": "z-axis degrees",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.4263,
+                  "y": 0.3075,
+                  "uniqueID": "id-6261",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 15
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 0
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.1,
+                  "uniqueID": "id-6262",
+                  "name": "minor radius",
+                  "type": "number",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.16,
+                  "uniqueID": "id-6263",
+                  "name": "major radius",
+                  "type": "number",
+                  "options": []
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-6258",
+                  "ap2ID": "id-6257"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-6259",
+                  "ap2ID": "id-6260"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-6260",
+                  "ap2ID": "id-6261"
+                },
+                {
+                  "ap2Name": "circleShape",
+                  "ap1ID": "id-6261",
+                  "ap2ID": "id-6258"
+                },
+                {
+                  "ap2Name": "diameter",
+                  "ap1ID": "id-6262",
+                  "ap2ID": "id-6259"
+                },
+                {
+                  "ap2Name": "majorRadius",
+                  "ap1ID": "id-6263",
+                  "ap2ID": "id-6258"
+                }
+              ],
+              "parentRepo": {
+                "contentURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.abundance?sanitize=true",
+                "dateCreated": "2025-10-06T19:53:02Z",
+                "dateModified": "2025-10-06T20:38:18Z",
+                "description": "TORUS ",
+                "forks": 0,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/alzatin/torus",
+                "lastFoundGit": "2026-11-24T18:23:38.963Z",
+                "likes": 0,
+                "owner": "alzatin",
+                "pngURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.png?sanitize=true",
+                "privateRepo": false,
+                "pullRequests": [],
+                "ranking": 1,
+                "readme": "https://raw.githubusercontent.com/alzatin/torus/master/README.md?sanitize=true",
+                "searchField": "torus alzatin torus  ",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.svg?sanitize=true",
+                "topMoleculeID": "",
+                "topics": [],
+                "userRanking": 0,
+                "userSetAsThumbnail": false,
+                "yyyy": 2025,
+                "repoName": "torus",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "scaleToProjectUnits": true,
+              "lastReloadedFromGithubAt": 1795557179817
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.1668,
+              "y": 0.5809,
+              "uniqueID": "id-6264",
+              "name": "ScaleCentered",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "factor",
+                  "ioValue": 0.8
+                },
+                {
+                  "name": "center",
+                  "ioValue": []
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-6265",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.5716,
+                  "y": 0.6029,
+                  "uniqueID": "id-6266",
+                  "ioValues": [
+                    {
+                      "name": "shape",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "factor",
+                      "ioValue": 0.8
+                    },
+                    {
+                      "name": "center",
+                      "ioValue": []
+                    }
+                  ],
+                  "interpreterVersion": 1,
+                  "code": "function run(shape: Assembly, factor: number, center: number[]) {\n  return shape.onLeafs((leaf) => {\n    let centerAsPoint: replicad.Point | undefined = undefined\n    if (leaf.is2D() && center.length == 2 || (!leaf.is2D() && center.length == 3)) {\n      centerAsPoint = center as replicad.Point;\n    } else {\n      centerAsPoint = leaf.geometry.boundingBox.center;\n    }\n    if (leaf.geometry instanceof replicad.Drawing) {\n      leaf.geometry = leaf.geometry.scale(factor, centerAsPoint as [number, number])\n    } else {\n      leaf.geometry = replicad.cast(replicad.scale(leaf.geometry.wrapped, centerAsPoint, factor))\n    }\n    return leaf;\n  })\n}",
+                  "compiledCode": "\"use strict\";\nfunction run(shape, factor, center) {\n    return shape.onLeafs((leaf) => {\n        let centerAsPoint = undefined;\n        if (leaf.is2D() && center.length == 2 || (!leaf.is2D() && center.length == 3)) {\n            centerAsPoint = center;\n        }\n        else {\n            centerAsPoint = leaf.geometry.boundingBox.center;\n        }\n        if (leaf.geometry instanceof replicad.Drawing) {\n            leaf.geometry = leaf.geometry.scale(factor, centerAsPoint);\n        }\n        else {\n            leaf.geometry = replicad.cast(replicad.scale(leaf.geometry.wrapped, centerAsPoint, factor));\n        }\n        return leaf;\n    });\n}\n"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.1,
+                  "uniqueID": "id-6267",
+                  "name": "shape",
+                  "type": "geometry",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.16,
+                  "uniqueID": "id-6268",
+                  "name": "factor",
+                  "options": []
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.0165,
+                  "y": 0.22,
+                  "uniqueID": "id-6269",
+                  "name": "center",
+                  "type": "array",
+                  "options": []
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-6266",
+                  "ap2ID": "id-6265"
+                },
+                {
+                  "ap2Name": "shape",
+                  "ap1ID": "id-6267",
+                  "ap2ID": "id-6266"
+                },
+                {
+                  "ap2Name": "factor",
+                  "ap1ID": "id-6268",
+                  "ap2ID": "id-6266"
+                },
+                {
+                  "ap2Name": "center",
+                  "ap1ID": "id-6269",
+                  "ap2ID": "id-6266"
+                }
+              ],
+              "parentRepo": {
+                "contentURL": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/project.abundance?sanitize=true",
+                "dateCreated": "2026-08-18T16:38:59Z",
+                "dateModified": "2026-08-18T18:03:43Z",
+                "description": "Scale a shape by the given factor. Defaults to scale from center of the input shape.",
+                "forks": 0,
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/tristan-huber/ScaleCentered",
+                "lastFoundGit": "2026-11-24T18:23:38.963Z",
+                "likes": 0,
+                "owner": "tristan-huber",
+                "pngURL": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/project.png?sanitize=true",
+                "privateRepo": false,
+                "pullRequests": [],
+                "ranking": 2,
+                "readme": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/README.md?sanitize=true",
+                "searchField": "scalecentered tristan-huber scale a shape by the given factor. defaults to scale from center of the input shape. abundance-tool",
+                "svgURL": "https://raw.githubusercontent.com/tristan-huber/ScaleCentered/master/project.svg?sanitize=true",
+                "topMoleculeID": "",
+                "topics": [
+                  "abundance-tool"
+                ],
+                "userRanking": 0,
+                "userSetAsThumbnail": false,
+                "yyyy": 2026,
+                "repoName": "ScaleCentered",
+                "isLocal": false
+              },
+              "unitsKey": "Unitless",
+              "fileTypeVersion": 1,
+              "scaleToProjectUnits": true,
+              "lastReloadedFromGithubAt": 1795557685720
             }
           ],
           "allConnectors": [
@@ -2848,21 +3196,6 @@
               "ap2ID": "id-5407"
             },
             {
-              "ap2Name": "retain",
-              "ap1ID": "id-5406",
-              "ap2ID": "id-5408"
-            },
-            {
-              "ap2Name": "remove",
-              "ap1ID": "id-5407",
-              "ap2ID": "id-5408"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-5408",
-              "ap2ID": "id-5986"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-5970",
               "ap2ID": "id-5980"
@@ -2881,6 +3214,21 @@
               "ap2Name": "remove",
               "ap1ID": "id-5986",
               "ap2ID": "id-3060"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-6255",
+              "ap2ID": "id-5986"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-6256",
+              "ap2ID": "id-6264"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6264",
+              "ap2ID": "id-6255"
             }
           ],
           "fileTypeVersion": 1
@@ -3383,197 +3731,6 @@
               "ioValue": 1
             }
           ]
-        },
-        {
-          "atomType": "GitHubMolecule",
-          "x": 0.6518,
-          "y": 0.8426,
-          "uniqueID": "id-6170",
-          "name": "torus",
-          "ioValues": [
-            {
-              "name": "minor radius",
-              "ioValue": 2,
-              "currentEquation": "2"
-            },
-            {
-              "name": "major radius",
-              "ioValue": 22
-            }
-          ],
-          "topLevel": false,
-          "allAtoms": [
-            {
-              "atomType": "Output",
-              "x": 0.98,
-              "y": 0.5,
-              "uniqueID": "id-6163",
-              "ioValues": [
-                {
-                  "name": "number or geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
-              "atomType": "Code",
-              "x": 0.6102,
-              "y": 0.4814,
-              "uniqueID": "id-6164",
-              "ioValues": [
-                {
-                  "name": "circleShape",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "majorRadius",
-                  "ioValue": 22
-                }
-              ],
-              "interpreterVersion": 0,
-              "code": "\n      const Inputs = [\n       {inputName: \"circleShape\", type: \"geometry\", defaultValue: null},\n      {inputName: \"majorRadius\", type: \"number\", defaultValue: 10},\n      ]\n\n       let createdRectangle = library[circleShape]\n      const newPlane = new replicad.Plane().pivot(0, 'Y')\n    //Use the built-in Move function to move the shape in the X direction\n      let movedShape = await Move(createdRectangle, majorRadius, 0, 0)\n\n       const torus =  movedShape.geometry[0].sketchOnPlane(\"XZ\").revolve();\n \n      //Wrap the raw replicad geometry in our assembly format\n      let shape2 = {\n          geometry: [torus],\n          dimension: \"3D\",\n          tags: [\"createdShape\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      return shape2"
-            },
-            {
-              "atomType": "Circle",
-              "x": 0.1583,
-              "y": 0.3012,
-              "uniqueID": "id-6165",
-              "ioValues": [
-                {
-                  "name": "diameter",
-                  "ioValue": 2
-                }
-              ]
-            },
-            {
-              "atomType": "Rotate",
-              "x": 0.2992,
-              "y": 0.3727,
-              "uniqueID": "id-6166",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "x-axis degrees",
-                  "ioValue": 0
-                },
-                {
-                  "name": "y-axis degrees",
-                  "ioValue": 90
-                },
-                {
-                  "name": "z-axis degrees",
-                  "ioValue": 0
-                }
-              ]
-            },
-            {
-              "atomType": "Move",
-              "x": 0.4263,
-              "y": 0.3075,
-              "uniqueID": "id-6167",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 15
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 0
-                }
-              ]
-            },
-            {
-              "atomType": "Input",
-              "x": 0.0165,
-              "y": 0.1,
-              "uniqueID": "id-6168",
-              "name": "minor radius",
-              "type": "number",
-              "options": []
-            },
-            {
-              "atomType": "Input",
-              "x": 0.0165,
-              "y": 0.16,
-              "uniqueID": "id-6169",
-              "name": "major radius",
-              "type": "number",
-              "options": []
-            }
-          ],
-          "allConnectors": [
-            {
-              "ap2Name": "number or geometry",
-              "ap1ID": "id-6164",
-              "ap2ID": "id-6163"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-6165",
-              "ap2ID": "id-6166"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-6166",
-              "ap2ID": "id-6167"
-            },
-            {
-              "ap2Name": "circleShape",
-              "ap1ID": "id-6167",
-              "ap2ID": "id-6164"
-            },
-            {
-              "ap2Name": "diameter",
-              "ap1ID": "id-6168",
-              "ap2ID": "id-6165"
-            },
-            {
-              "ap2Name": "majorRadius",
-              "ap1ID": "id-6169",
-              "ap2ID": "id-6164"
-            }
-          ],
-          "parentRepo": {
-            "contentURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.abundance?sanitize=true",
-            "dateCreated": "2025-10-06T19:53:02Z",
-            "dateModified": "2025-10-06T20:38:18Z",
-            "description": "TORUS ",
-            "forks": 0,
-            "githubMoleculesUsed": [],
-            "html_url": "https://github.com/alzatin/torus",
-            "lastFoundGit": "2026-11-24T18:23:38.963Z",
-            "likes": 0,
-            "owner": "alzatin",
-            "pngURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.png?sanitize=true",
-            "privateRepo": false,
-            "pullRequests": [],
-            "ranking": 1,
-            "readme": "https://raw.githubusercontent.com/alzatin/torus/master/README.md?sanitize=true",
-            "searchField": "torus alzatin torus  ",
-            "svgURL": "https://raw.githubusercontent.com/alzatin/torus/master/project.svg?sanitize=true",
-            "topMoleculeID": "",
-            "topics": [],
-            "userRanking": 0,
-            "userSetAsThumbnail": false,
-            "yyyy": 2025,
-            "repoName": "torus",
-            "isLocal": false
-          },
-          "unitsKey": "MM",
-          "fileTypeVersion": 1,
-          "scaleToProjectUnits": true,
-          "lastReloadedFromGithubAt": 1795557179817
         }
       ],
       "allConnectors": [
