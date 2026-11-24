@@ -64,8 +64,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.0958,
-          "y": 0.7745,
+          "x": 0.0915,
+          "y": 0.766,
           "uniqueID": "1eb26007-d7bb-4757-8e8d-a296b7638d29",
           "name": "NegSpace",
           "topLevel": false,
@@ -313,8 +313,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.2445,
-              "y": 0.7979,
+              "x": 0.2455,
+              "y": 0.783,
               "uniqueID": "id-5385",
               "ioValues": [
                 {
@@ -331,7 +331,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 6
+                  "ioValue": 6.5
                 }
               ]
             },
@@ -351,11 +351,12 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 3
+                  "ioValue": 3,
+                  "currentEquation": "3"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 6
+                  "ioValue": 6.5
                 }
               ]
             },
@@ -1473,11 +1474,11 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 9
+                  "ioValue": 10
                 },
                 {
                   "name": "y length",
-                  "ioValue": 15
+                  "ioValue": 20
                 }
               ]
             },
@@ -1509,7 +1510,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 11
+                  "ioValue": 10
                 },
                 {
                   "name": "yDist",
@@ -1533,7 +1534,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 11
+                  "ioValue": 10
                 },
                 {
                   "name": "yDist",
@@ -2603,7 +2604,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -22
+              "ioValue": -1
             },
             {
               "name": "zDist",
@@ -2853,7 +2854,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -22
+              "ioValue": -1
             },
             {
               "name": "zDist",
@@ -2935,7 +2936,7 @@
           "y": 0.2085,
           "uniqueID": "id-4708",
           "name": "PositionLock",
-          "value": -22
+          "value": -1
         },
         {
           "atomType": "Rotate",
@@ -2957,7 +2958,7 @@
             },
             {
               "name": "z-axis degrees",
-              "ioValue": 5
+              "ioValue": 0
             }
           ]
         }
