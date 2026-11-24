@@ -1900,7 +1900,8 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 25
+                  "ioValue": 25,
+                  "currentEquation": "25"
                 },
                 {
                   "name": "y length",
@@ -1928,7 +1929,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": -15
+                  "ioValue": -14.5
                 }
               ]
             },
@@ -1944,7 +1945,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 15
+                  "ioValue": 14
                 }
               ]
             },
@@ -2616,8 +2617,8 @@
         },
         {
           "atomType": "Color",
-          "x": 0.3464,
-          "y": 0.2064,
+          "x": 0.3516,
+          "y": 0.1298,
           "uniqueID": "id-3154",
           "ioValues": [
             {
@@ -2643,7 +2644,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -20
+              "ioValue": 0
             },
             {
               "name": "zDist",
@@ -2863,8 +2864,8 @@
         },
         {
           "atomType": "Intersection",
-          "x": 0.5184,
-          "y": 0.2553,
+          "x": 0.5201,
+          "y": 0.2681,
           "uniqueID": "id-4192",
           "ioValues": [
             {
@@ -2893,7 +2894,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -20
+              "ioValue": 0
             },
             {
               "name": "zDist",
@@ -2968,6 +2969,14 @@
           "resolution": 96,
           "importIndex": 0,
           "partName": "PH_Main"
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.1531,
+          "y": 0.2085,
+          "uniqueID": "id-4708",
+          "name": "PositionLock",
+          "value": 0
         }
       ],
       "allConnectors": [
@@ -3090,6 +3099,16 @@
           "ap2Name": "geometry2",
           "ap1ID": "id-4196",
           "ap2ID": "id-4192"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-4708",
+          "ap2ID": "id-3269"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-4708",
+          "ap2ID": "id-4196"
         }
       ],
       "fileTypeVersion": 1
