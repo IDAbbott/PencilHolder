@@ -1790,46 +1790,6 @@
               ]
             },
             {
-              "atomType": "Assembly",
-              "x": 0.5706,
-              "y": 0.666,
-              "uniqueID": "id-3054",
-              "ioValues": [
-                {
-                  "name": "makeDisjoint",
-                  "ioValue": true
-                },
-                {
-                  "name": "Shape 1",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape2",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape4",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape5",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape6",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape7",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "Shape8",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ]
-            },
-            {
               "atomType": "Difference",
               "x": 0.6784,
               "y": 0.5319,
@@ -1879,8 +1839,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.426,
-              "y": 0.8,
+              "x": 0.2866,
+              "y": 0.7191,
               "uniqueID": "id-3215",
               "ioValues": [
                 {
@@ -1903,8 +1863,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4525,
-              "y": 0.7128,
+              "x": 0.3071,
+              "y": 0.6277,
               "uniqueID": "id-3216",
               "ioValues": [
                 {
@@ -1927,8 +1887,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4098,
-              "y": 0.9043,
+              "x": 0.2737,
+              "y": 0.8213,
               "uniqueID": "id-4686",
               "ioValues": [
                 {
@@ -2268,6 +2228,87 @@
                   "ioValue": "__GEOMETRY_INPUT__"
                 }
               ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.3533,
+              "y": 0.717,
+              "uniqueID": "id-5970",
+              "ioValues": [
+                {
+                  "name": "makeDisjoint",
+                  "ioValue": true
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape4",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.4251,
+              "y": 0.7021,
+              "uniqueID": "id-5980",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": -20
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Assembly",
+              "x": 0.5423,
+              "y": 0.6255,
+              "uniqueID": "id-5986",
+              "ioValues": [
+                {
+                  "name": "makeDisjoint",
+                  "ioValue": true
+                },
+                {
+                  "name": "Shape 1",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape2",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape3",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Shape4",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -2285,11 +2326,6 @@
               "ap2Name": "Shape2",
               "ap1ID": "id-3009",
               "ap2ID": "id-4773"
-            },
-            {
-              "ap2Name": "remove",
-              "ap1ID": "id-3054",
-              "ap2ID": "id-3060"
             },
             {
               "ap2Name": "number or geometry",
@@ -2317,29 +2353,24 @@
               "ap2ID": "id-4686"
             },
             {
-              "ap2Name": "Shape5",
+              "ap2Name": "Shape2",
               "ap1ID": "id-3215",
-              "ap2ID": "id-3054"
+              "ap2ID": "id-5970"
             },
             {
-              "ap2Name": "Shape6",
-              "ap1ID": "id-3215",
-              "ap2ID": "id-3054"
-            },
-            {
-              "ap2Name": "Shape4",
+              "ap2Name": "Shape 1",
               "ap1ID": "id-3216",
-              "ap2ID": "id-3054"
+              "ap2ID": "id-5970"
             },
             {
-              "ap2Name": "Shape7",
+              "ap2Name": "Shape3",
               "ap1ID": "id-4686",
-              "ap2ID": "id-3054"
+              "ap2ID": "id-5970"
             },
             {
-              "ap2Name": "Shape8",
+              "ap2Name": "Shape3",
               "ap1ID": "id-4693",
-              "ap2ID": "id-3054"
+              "ap2ID": "id-5986"
             },
             {
               "ap2Name": "geometry",
@@ -2422,9 +2453,24 @@
               "ap2ID": "id-5408"
             },
             {
-              "ap2Name": "Shape2",
+              "ap2Name": "Shape 1",
               "ap1ID": "id-5408",
-              "ap2ID": "id-3054"
+              "ap2ID": "id-5986"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-5970",
+              "ap2ID": "id-5980"
+            },
+            {
+              "ap2Name": "Shape2",
+              "ap1ID": "id-5980",
+              "ap2ID": "id-5986"
+            },
+            {
+              "ap2Name": "remove",
+              "ap1ID": "id-5986",
+              "ap2ID": "id-3060"
             }
           ],
           "fileTypeVersion": 1
@@ -2502,8 +2548,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6553,
-          "y": 0.2957,
+          "x": 0.657,
+          "y": 0.2894,
           "uniqueID": "id-3724",
           "ioValues": [
             {
