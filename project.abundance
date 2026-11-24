@@ -275,7 +275,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 25
+                  "ioValue": 22
                 }
               ]
             },
@@ -1772,7 +1772,7 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.0547,
+          "x": 0.0573,
           "y": 0.1638,
           "uniqueID": "id-3003",
           "name": "Lock",
@@ -2186,7 +2186,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 25
+                  "ioValue": 22
                 }
               ]
             },
@@ -2604,7 +2604,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -1
+              "ioValue": -21
             },
             {
               "name": "zDist",
@@ -2854,7 +2854,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -1
+              "ioValue": -21
             },
             {
               "name": "zDist",
@@ -2936,7 +2936,7 @@
           "y": 0.2085,
           "uniqueID": "id-4708",
           "name": "PositionLock",
-          "value": -1
+          "value": -21
         },
         {
           "atomType": "Rotate",
