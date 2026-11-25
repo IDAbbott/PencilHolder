@@ -834,40 +834,6 @@
               ]
             },
             {
-              "atomType": "Export",
-              "x": 0.8174,
-              "y": 0.7975,
-              "uniqueID": "7cf4d62f-ef56-4726-b1d3-c89db01cc4b7",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "File Type",
-                  "ioValue": "STEP",
-                  "currentEquation": "STL"
-                },
-                {
-                  "name": "Resolution (dpi)",
-                  "ioValue": 96
-                },
-                {
-                  "name": "STL Tolerance",
-                  "ioValue": 0.05
-                },
-                {
-                  "name": "Part Name",
-                  "ioValue": "PH Stud",
-                  "currentEquation": "Stopper"
-                }
-              ],
-              "type": "STEP",
-              "resolution": 96,
-              "importIndex": 0,
-              "partName": "PH Stud"
-            },
-            {
               "atomType": "Extrude",
               "x": 0.2515,
               "y": 0.6519,
@@ -1214,11 +1180,6 @@
               "ap2Name": "number or geometry",
               "ap1ID": "id-1237",
               "ap2ID": "61e20b77-287f-490a-a885-3880996ea6c1"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-1237",
-              "ap2ID": "7cf4d62f-ef56-4726-b1d3-c89db01cc4b7"
             },
             {
               "ap2Name": "Shape 1",
