@@ -886,7 +886,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 3
+                  "ioValue": 2
                 }
               ]
             },
@@ -1142,6 +1142,18 @@
                 }
               ],
               "closedSelection": 0
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.0932,
+              "y": 0.7426,
+              "uniqueID": "id-6363",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 5.5
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -1164,11 +1176,6 @@
               "ap2Name": "Shape 2",
               "ap1ID": "a0f9ed6f-f2b7-4466-8ffb-2300b2251a95",
               "ap2ID": "ec9c76a2-df00-42da-acad-85b159cace16"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "df88d9d4-c698-4941-9360-63311afea810",
-              "ap2ID": "8c3b54e6-2162-488f-881b-9341f9ffaf46"
             },
             {
               "ap2Name": "geometry",
@@ -1229,6 +1236,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-1577",
               "ap2ID": "id-1213"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-6363",
+              "ap2ID": "8c3b54e6-2162-488f-881b-9341f9ffaf46"
             }
           ],
           "fileTypeVersion": 1
