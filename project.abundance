@@ -3122,15 +3122,16 @@
             },
             {
               "name": "xDist",
-              "ioValue": 0
+              "ioValue": 0,
+              "currentEquation": "0"
             },
             {
               "name": "yDist",
-              "ioValue": -1
+              "ioValue": -21
             },
             {
               "name": "zDist",
-              "ioValue": 20
+              "ioValue": 19
             }
           ]
         },
@@ -3376,7 +3377,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -1
+              "ioValue": -21
             },
             {
               "name": "zDist",
@@ -3458,7 +3459,7 @@
           "y": 0.2085,
           "uniqueID": "id-4708",
           "name": "PositionLock",
-          "value": -1
+          "value": -21
         },
         {
           "atomType": "Rotate",
